@@ -1,0 +1,116 @@
+﻿using MySql.Data.MySqlClient;
+using MySqlConnector;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Data.SqlClient;
+using System.Drawing;
+using System.Linq;
+using System.Security.Cryptography;
+using System.Text;
+using System;
+using System.ComponentModel.DataAnnotations;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Text.RegularExpressions;
+
+namespace login
+{
+    public partial class SingUp : Form
+    {
+        public SingUp()
+        {
+            InitializeComponent();
+        }
+         
+        private void flowLayoutPanel1_MouseClick(object sender, MouseEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void label6_MouseClick(object sender, MouseEventArgs e)
+        { 
+            this.Hide();
+            Login login = new Login();
+            login.Show();
+        }
+
+        private void textBox1_MouseClick(object sender, MouseEventArgs e)
+        {  
+        }
+          
+        //Boton para enviar formulario
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DateTime hoy = DateTime.Now;
+            String date = hoy.ToString();
+            Model.Usuarios user = new Model.Usuarios();
+            if (user.Registro(textBox4.Text, textBox5.Text, textBox6.Text, date, textBox1.Text, textBox2.Text, textBox3.Text))
+            {
+                this.Hide();
+                Login login = new Login();
+                login.Show();
+            } 
+        }
+
+        private void panel8_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (textBox5.PasswordChar == '*')
+            {
+                textBox5.PasswordChar = '\0';
+            }
+            else
+            {
+                textBox5.PasswordChar = '*';
+            }
+        }
+
+        private void panel9_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (textBox6.PasswordChar == '*')
+            {
+                textBox6.PasswordChar = '\0';
+            }
+            else
+            {
+                textBox6.PasswordChar = '*';
+            }
+        }
+
+        private void flowLayoutPanel2_Click(object sender, EventArgs e)
+        { 
+            WindowState = FormWindowState.Minimized;
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login login = new Login();
+            login.Show();
+        }
+
+        //Eventos para mover la ventana con el mouse
+        int m, mx, my;
+
+        private void panel2_MouseDown(object sender, MouseEventArgs e)
+        {
+            m = 1;
+            mx = e.X;
+            my = e.Y; 
+        }
+         
+        private void panel2_MouseMove(object sender, MouseEventArgs e)
+        { 
+            if (m == 1)
+            {
+                this.SetDesktopLocation(MousePosition.X - mx, MousePosition.Y - my);
+            }
+        }
+
+        private void panel2_MouseUp(object sender, MouseEventArgs e)
+        {
+            m = 0;
+        }
+    }
+}
