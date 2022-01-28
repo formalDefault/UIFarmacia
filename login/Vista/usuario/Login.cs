@@ -45,14 +45,7 @@ namespace login
         private void maskedTextBox1_MouseClick(object sender, MouseEventArgs e)
         { 
         }
-
-        private void label6_MouseClick(object sender, MouseEventArgs e)
-        { 
-            this.Hide();
-            SingUp registro = new SingUp();
-            registro.Show();
-        }
-
+         
         private void panel5_Paint(object sender, PaintEventArgs e)
         {
 

@@ -310,6 +310,7 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(36, 37);
             this.panel4.TabIndex = 3;
+            this.panel4.Click += new System.EventHandler(this.panel4_Click);
             // 
             // labelReloj
             // 
@@ -350,9 +351,9 @@
             // panelContainer
             // 
             this.panelContainer.BackColor = System.Drawing.Color.White;
-            this.panelContainer.Location = new System.Drawing.Point(103, 78);
+            this.panelContainer.Location = new System.Drawing.Point(103, 81);
             this.panelContainer.Name = "panelContainer";
-            this.panelContainer.Size = new System.Drawing.Size(1428, 729);
+            this.panelContainer.Size = new System.Drawing.Size(1428, 726);
             this.panelContainer.TabIndex = 3;
             // 
             // reloj

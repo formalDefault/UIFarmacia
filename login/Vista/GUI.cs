@@ -18,7 +18,7 @@ namespace login
             InitializeComponent();
             pintarBotones();
             Vista.Variables var = new Vista.Variables();
-            labelUser.Text = var.getUser();
+            labelUser.Text = var.User;
             SCaja.BackColor = Color.Tomato;
             mostrarContenido(new Vista.Secciones.Caja());
         } 
@@ -109,11 +109,18 @@ namespace login
         }
 
         int m, mx, my;
+
         private void panel1_MouseDown(object sender, MouseEventArgs e)
         {
             m = 1;
             mx = e.X;
             my = e.Y;
+        }
+
+        private void panel4_Click(object sender, EventArgs e)
+        { 
+            SingUp singUp = new SingUp();
+            singUp.Show();
         }
 
         private void panel1_MouseMove(object sender, MouseEventArgs e)

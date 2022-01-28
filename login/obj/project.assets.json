@@ -111,7 +111,7 @@
           }
         }
       },
-      "MySql.Data/8.0.27": {
+      "MySql.Data/8.0.28": {
         "type": "package",
         "dependencies": {
           "BouncyCastle.NetCore": "1.8.5",
@@ -124,14 +124,14 @@
           "System.Text.Encoding.CodePages": "4.4.0"
         },
         "compile": {
-          "lib/net5.0/MySql.Data.dll": {},
-          "lib/net5.0/Ubiety.Dns.Core.dll": {},
-          "lib/net5.0/ZstdNet.dll": {}
+          "lib/net6.0/MySql.Data.dll": {},
+          "lib/net6.0/Ubiety.Dns.Core.dll": {},
+          "lib/net6.0/ZstdNet.dll": {}
         },
         "runtime": {
-          "lib/net5.0/MySql.Data.dll": {},
-          "lib/net5.0/Ubiety.Dns.Core.dll": {},
-          "lib/net5.0/ZstdNet.dll": {}
+          "lib/net6.0/MySql.Data.dll": {},
+          "lib/net6.0/Ubiety.Dns.Core.dll": {},
+          "lib/net6.0/ZstdNet.dll": {}
         }
       },
       "MySqlConnector/2.1.2": {
@@ -566,10 +566,10 @@
         "version.txt"
       ]
     },
-    "MySql.Data/8.0.27": {
-      "sha512": "Ef+sH12/nGAiF9yLZFkuXh7vtVvEPiLKyZNJiDk+VBULzLcXj0lmfU7qcmWNCSVX5n6zu5jMV+JaNf1C+a+T8g==",
+    "MySql.Data/8.0.28": {
+      "sha512": "7b699tU9ba0r7SBK7K9snGJB9ulnOdwEXG28kpVvaQSN0hHenfoJ/ADOtdfhcvcn1KStBX8pFK5qIl8scdBL2g==",
       "type": "package",
-      "path": "mysql.data/8.0.27",
+      "path": "mysql.data/8.0.28",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -585,6 +585,10 @@
         "lib/net5.0/MySql.Data.xml",
         "lib/net5.0/Ubiety.Dns.Core.dll",
         "lib/net5.0/ZstdNet.dll",
+        "lib/net6.0/MySql.Data.dll",
+        "lib/net6.0/MySql.Data.xml",
+        "lib/net6.0/Ubiety.Dns.Core.dll",
+        "lib/net6.0/ZstdNet.dll",
         "lib/netstandard2.0/MySql.Data.dll",
         "lib/netstandard2.0/MySql.Data.xml",
         "lib/netstandard2.0/Ubiety.Dns.Core.dll",
@@ -593,7 +597,7 @@
         "lib/netstandard2.1/MySql.Data.xml",
         "lib/netstandard2.1/Ubiety.Dns.Core.dll",
         "lib/netstandard2.1/ZstdNet.dll",
-        "mysql.data.8.0.27.nupkg.sha512",
+        "mysql.data.8.0.28.nupkg.sha512",
         "mysql.data.nuspec"
       ]
     },
@@ -1161,7 +1165,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
-      "MySql.Data >= 8.0.27",
+      "MySql.Data >= 8.0.28",
       "MySqlConnector >= 2.1.2",
       "System.Data.SqlClient >= 4.8.3"
     ]
@@ -1212,7 +1216,7 @@
         "dependencies": {
           "MySql.Data": {
             "target": "Package",
-            "version": "[8.0.27, )"
+            "version": "[8.0.28, )"
           },
           "MySqlConnector": {
             "target": "Package",

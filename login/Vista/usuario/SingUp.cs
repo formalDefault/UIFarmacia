@@ -26,20 +26,18 @@ namespace login
          
         private void flowLayoutPanel1_MouseClick(object sender, MouseEventArgs e)
         {
-            Application.Exit();
+            this.Hide();
         }
 
         private void label6_MouseClick(object sender, MouseEventArgs e)
         { 
-            this.Hide();
-            Login login = new Login();
-            login.Show();
         }
 
         private void textBox1_MouseClick(object sender, MouseEventArgs e)
-        {  
+        {
+            
         }
-          
+
         //Boton para enviar formulario
         private void button1_Click(object sender, EventArgs e)
         {
@@ -84,33 +82,8 @@ namespace login
         }
 
         private void label10_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Login login = new Login();
-            login.Show();
-        }
-
-        //Eventos para mover la ventana con el mouse
-        int m, mx, my;
-
-        private void panel2_MouseDown(object sender, MouseEventArgs e)
-        {
-            m = 1;
-            mx = e.X;
-            my = e.Y; 
+        { 
         }
          
-        private void panel2_MouseMove(object sender, MouseEventArgs e)
-        { 
-            if (m == 1)
-            {
-                this.SetDesktopLocation(MousePosition.X - mx, MousePosition.Y - my);
-            }
-        }
-
-        private void panel2_MouseUp(object sender, MouseEventArgs e)
-        {
-            m = 0;
-        }
     }
 }

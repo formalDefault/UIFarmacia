@@ -40,8 +40,6 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -92,7 +90,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(609, 156);
+            this.label1.Location = new System.Drawing.Point(609, 174);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(180, 32);
             this.label1.TabIndex = 2;
@@ -104,7 +102,7 @@
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(522, 284);
+            this.textBox1.Location = new System.Drawing.Point(522, 302);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(357, 19);
             this.textBox1.TabIndex = 3;
@@ -116,7 +114,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(522, 250);
+            this.label2.Location = new System.Drawing.Point(522, 268);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(62, 24);
             this.label2.TabIndex = 5;
@@ -127,7 +125,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(522, 366);
+            this.label3.Location = new System.Drawing.Point(522, 384);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(111, 24);
             this.label3.TabIndex = 6;
@@ -136,7 +134,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Location = new System.Drawing.Point(522, 312);
+            this.panel3.Location = new System.Drawing.Point(522, 330);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(357, 3);
             this.panel3.TabIndex = 9;
@@ -144,7 +142,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Location = new System.Drawing.Point(522, 425);
+            this.panel4.Location = new System.Drawing.Point(522, 443);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(357, 3);
             this.panel4.TabIndex = 10;
@@ -154,7 +152,7 @@
             this.panel5.BackColor = System.Drawing.Color.Transparent;
             this.panel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel5.BackgroundImage")));
             this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel5.Location = new System.Drawing.Point(634, 48);
+            this.panel5.Location = new System.Drawing.Point(634, 66);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(122, 86);
             this.panel5.TabIndex = 11;
@@ -166,38 +164,13 @@
             this.maskedTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.maskedTextBox1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.maskedTextBox1.ForeColor = System.Drawing.Color.White;
-            this.maskedTextBox1.Location = new System.Drawing.Point(522, 402);
+            this.maskedTextBox1.Location = new System.Drawing.Point(522, 420);
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.PasswordChar = '*';
             this.maskedTextBox1.Size = new System.Drawing.Size(357, 19);
             this.maskedTextBox1.TabIndex = 12;
             this.maskedTextBox1.Text = "qq";
             this.maskedTextBox1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.maskedTextBox1_MouseClick);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(568, 572);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(149, 16);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "No tienes una cuenta?";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label6.Location = new System.Drawing.Point(723, 573);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(112, 16);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "Crea una cuenta";
-            this.label6.MouseClick += new System.Windows.Forms.MouseEventHandler(this.label6_MouseClick);
             // 
             // button1
             // 
@@ -209,7 +182,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(522, 488);
+            this.button1.Location = new System.Drawing.Point(522, 506);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(357, 45);
             this.button1.TabIndex = 15;
@@ -223,7 +196,7 @@
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panel1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel1.Location = new System.Drawing.Point(842, 402);
+            this.panel1.Location = new System.Drawing.Point(842, 420);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(37, 23);
             this.panel1.TabIndex = 16;
@@ -247,8 +220,6 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
@@ -280,8 +251,6 @@
         private Panel panel4;
         private Panel panel5;
         private MaskedTextBox maskedTextBox1;
-        private Label label5;
-        private Label label6;
         private Button button1;
         private Panel panel1;
         private FlowLayoutPanel flowLayoutPanel2;

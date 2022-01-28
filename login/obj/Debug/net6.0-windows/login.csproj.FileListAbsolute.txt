@@ -39,3 +39,7 @@ C:\Users\HP\source\repos\login\login\obj\Debug\net6.0-windows\login.Vista.Seccio
 C:\Users\HP\source\repos\login\login\obj\Debug\net6.0-windows\login.Vista.Secciones.Inventario.resources
 C:\Users\HP\source\repos\login\login\obj\Debug\net6.0-windows\login.Vista.Secciones.Pedidos.resources
 C:\Users\HP\source\repos\login\login\obj\Debug\net6.0-windows\login.Vista.Secciones.Proveedores.resources
+C:\Users\HP\source\repos\login\login\obj\Debug\net6.0-windows\login.Vista.Secciones.SubSecciones.Caja.Corte.resources
+C:\Users\HP\source\repos\login\login\obj\Debug\net6.0-windows\login.Vista.Secciones.SubSecciones.Caja.Terminal.resources
+C:\Users\HP\source\repos\login\login\obj\Debug\net6.0-windows\login.Vista.Secciones.SubSecciones.Caja.Carrito.resources
+C:\Users\HP\source\repos\login\login\obj\Debug\net6.0-windows\login.Vista.Secciones.SubSecciones.Inventario.stock.resources
