@@ -12,17 +12,27 @@ namespace login.Model.caja
     {
         MySqlConnection con = new MySqlConnection("datasource=127.0.0.1;port=3306;username=root;password=default_local;database=pos;");
 
-        string query;
-        
+        private string query;
+
         //imprime los productos en la ventana ventas
-        public DataTable vista()
+        public DataTable TablaProductos()
         {
-            query = "select * from productos";
-            MySqlDataAdapter adapter = new MySqlDataAdapter(query, con);
             DataTable dt = new DataTable();
-            adapter.Fill(dt);
-            return dt;  
-        }
+            query = "select * from productos";
+            try
+            {
+                con.Open();
+                MySqlDataAdapter adapter = new MySqlDataAdapter(query, con);
+                adapter.Fill(dt);
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hubo un error en la base de datos", ex.Message);
+                con.Close();
+            }
+            return dt;
+        } 
 
     }
 }

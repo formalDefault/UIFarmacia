@@ -15,20 +15,14 @@ namespace login.Vista.Secciones.SubSecciones.Caja
     {
         ventas ventas = new ventas();   
 
-
         public Terminal()
         {
             InitializeComponent();
-            dataGridView1.DataSource = ventas.vista();
+            dataGridView1.DataSource = ventas.TablaProductos(); 
         }
 
         private void button3_Click(object sender, EventArgs e)
         { 
-            
-        }
-
-        private void cargarTabla()
-        { 
-        }
+        } 
     }
 }

@@ -67,7 +67,7 @@
   <data name="panel2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABDIAAAI8CAYAAAADc4tqAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wAAADsABataJCQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAABTMSURBVHhe7d39
+        vAAADrwBlbxySQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAABTMSURBVHhe7d39
         7+91XcdxDicEOhwtIS5ELmxTttTjxZqpBFZbThzT1YTVauUF62pzmaSiXB2yH5vZOgNHrTbxojU3q7kW
         gUfbQmY/CvRDcYADCRtt/g09nu/3YUUicjjf8/1+HufcbtvD83p9f2Hzt/d9n8/nfcqGOT17Y3ZtdnP2
         xez+7MHskex72dNH/jUzMzMzMzOzY9szz9jzzP1ANs/g8yx+UzbP5vOMPs/qHPGS7GezW7KD2VPZvdnt
@@ -159,4 +159,10 @@
         ZmZmZmbHtmeeseeZe5695xn889k8k78vm2f007INccop/wPNFZvDl0nZ/AAAAABJRU5ErkJggg==
 </value>
   </data>
+  <metadata name="Nombre.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>85</value>
+  </metadata>
 </root>

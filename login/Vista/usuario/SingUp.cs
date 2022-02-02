@@ -42,7 +42,7 @@ namespace login
         private void button1_Click(object sender, EventArgs e)
         {
             DateTime hoy = DateTime.Now;
-            String date = hoy.ToString();
+            string date = hoy.ToString();
             Model.Usuarios user = new Model.Usuarios();
             if (user.Registro(textBox4.Text, textBox5.Text, textBox6.Text, date, textBox1.Text, textBox2.Text, textBox3.Text))
             {

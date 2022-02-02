@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.subMenu_addProducto = new System.Windows.Forms.Button();
             this.subMenu_devoluciones = new System.Windows.Forms.Button();
             this.subMenu_inventario = new System.Windows.Forms.Button();
             this.panelContainer = new System.Windows.Forms.Panel();
@@ -38,6 +39,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(36)))), ((int)(((byte)(67)))));
+            this.panel1.Controls.Add(this.subMenu_addProducto);
             this.panel1.Controls.Add(this.subMenu_devoluciones);
             this.panel1.Controls.Add(this.subMenu_inventario);
             this.panel1.ForeColor = System.Drawing.Color.White;
@@ -45,6 +47,26 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1455, 38);
             this.panel1.TabIndex = 6;
+            // 
+            // subMenu_addProducto
+            // 
+            this.subMenu_addProducto.BackColor = System.Drawing.Color.LimeGreen;
+            this.subMenu_addProducto.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.subMenu_addProducto.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(36)))), ((int)(((byte)(67)))));
+            this.subMenu_addProducto.FlatAppearance.BorderSize = 0;
+            this.subMenu_addProducto.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.subMenu_addProducto.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
+            this.subMenu_addProducto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
+            this.subMenu_addProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.subMenu_addProducto.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.subMenu_addProducto.ForeColor = System.Drawing.Color.White;
+            this.subMenu_addProducto.Location = new System.Drawing.Point(1267, 0);
+            this.subMenu_addProducto.Name = "subMenu_addProducto";
+            this.subMenu_addProducto.Size = new System.Drawing.Size(172, 38);
+            this.subMenu_addProducto.TabIndex = 12;
+            this.subMenu_addProducto.Text = "Registar producto";
+            this.subMenu_addProducto.UseVisualStyleBackColor = false;
+            this.subMenu_addProducto.Click += new System.EventHandler(this.subMenu_addProducto_Click);
             // 
             // subMenu_devoluciones
             // 
@@ -115,5 +137,6 @@
         private Panel panelContainer;
         private Button subMenu_devoluciones;
         private Button subMenu_inventario;
+        private Button subMenu_addProducto;
     }
 }

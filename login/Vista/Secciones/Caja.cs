@@ -60,6 +60,7 @@ namespace login.Vista.Secciones
             colors();
             subMenu_terminal.BackColor = Color.White;
             subMenu_terminal.ForeColor = Color.Black;
+
             mostrarContenido(new SubSecciones.Caja.Terminal()); 
         }
 

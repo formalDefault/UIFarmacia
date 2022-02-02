@@ -37,9 +37,11 @@ namespace login.Vista.Secciones
         {
             subMenu_inventario.BackColor = Color.Transparent;
             subMenu_devoluciones.BackColor = Color.Transparent; 
+            subMenu_addProducto.BackColor = Color.Transparent; 
 
             subMenu_inventario.ForeColor = Color.White;
             subMenu_devoluciones.ForeColor = Color.White; 
+            subMenu_addProducto.ForeColor = Color.White; 
         }
 
         private void subMenu_inventario_Click(object sender, EventArgs e)
@@ -55,6 +57,12 @@ namespace login.Vista.Secciones
             colors();
             subMenu_devoluciones.ForeColor = Color.Black;
             subMenu_devoluciones.BackColor = Color.White;
+        }
+
+        private void subMenu_addProducto_Click(object sender, EventArgs e)
+        { 
+            SubSecciones.Inventario.RegistarProducto form = new SubSecciones.Inventario.RegistarProducto();
+            form.Show();
         }
     }
 }
