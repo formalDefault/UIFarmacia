@@ -12,14 +12,14 @@ namespace login.Vista.Secciones.SubSecciones.Inventario
 {
     public partial class EntradaProducto : Form
     { 
-        Model.inventario.inventario inventario = new Model.inventario.inventario();
+        Model.funcGenerales funciones = new Model.funcGenerales();
         Model.inventario.varInventario varInventario = new Model.inventario.varInventario();
+        Model.inventario.inventario inventario = new Model.inventario.inventario();
 
         public EntradaProducto()
         {
             InitializeComponent();
-            Model.inventario.inventario inventario = new Model.inventario.inventario();
-            inventario.comboBox(txtProductos, "id, nombre", "productos");
+            funciones.comboBox(txtProductos, "id, nombre", "productos");
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -29,32 +29,38 @@ namespace login.Vista.Secciones.SubSecciones.Inventario
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (inventario.regEntrada(inventario.getIdProducto(txtProductos.Text), txtCantidad.Text))
+            int idProducto = funciones.GetId("productos", txtProductos.Text);
+            int cantidadProducto = Int16.Parse(txtCantidad.Text);
+            if (inventario.RegEntrada(idProducto, cantidadProducto, inventario.precioProductos(idProducto, cantidadProducto)))
             {
-                varInventario.pushStack(inventario.getIdEntrada());
-                if (varInventario.countStack() > 1)
+                varInventario.pushStackEntradas(funciones.GetId("entradas"));
+                if (varInventario.countStackEntradas() > 1)
                 {
-                    for (byte i = 0; i <= varInventario.countStack(); i++)
+                    for (byte i = 0; i <= varInventario.countStackEntradas(); i++)
                     {
-                        MessageBox.Show("Compra: " + varInventario.IdCompra + " Entrada: " + varInventario.peekStack() + " ");
-                        inventario.enlazarEntradasCompras(varInventario.peekStack(), varInventario.IdCompra);
-                        varInventario.popStack();
+                        inventario.enlazarEntradasCompras(varInventario.peekStackEntradas(), varInventario.IdCompra);
+                        varInventario.popStackEntradas();
                     }
+                    MessageBox.Show("Se finalizó la compra"); 
+                    this.Hide();
                 }
                 else
                 {
-                    MessageBox.Show("Compra: " + varInventario.IdCompra + " Entrada: " +varInventario.peekStack()+ " ");
-                    inventario.enlazarEntradasCompras(varInventario.peekStack(), varInventario.IdCompra);
+                    inventario.enlazarEntradasCompras(varInventario.peekStackEntradas(), varInventario.IdCompra);
+                    MessageBox.Show("Se finalizó la compra"); 
+                    this.Hide();
                 }
             } 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (inventario.regEntrada(inventario.getIdProducto(txtProductos.Text), txtCantidad.Text))
+            int idProducto = funciones.GetId("productos",txtProductos.Text);
+            int cantidadProducto = Int16.Parse(txtCantidad.Text);
+            if (inventario.RegEntrada(idProducto , cantidadProducto, inventario.precioProductos(idProducto, cantidadProducto)))
             {
                 MessageBox.Show("Entrada registrada"); 
-                varInventario.pushStack(inventario.getIdEntrada());
+                varInventario.pushStackEntradas(funciones.GetId("entradas"));
             }
             txtCantidad.Text = ""; 
             txtProductos.Text = "";

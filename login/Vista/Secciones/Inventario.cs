@@ -12,13 +12,21 @@ namespace login.Vista.Secciones
 {
     public partial class Inventario : Form
     {
+
         public Inventario()
         {
-            InitializeComponent();
+            InitializeComponent(); 
             mostrarContenido(new SubSecciones.Inventario.stock()); 
             subMenu_inventario.ForeColor = Color.Black;
             subMenu_inventario.BackColor = Color.White;
 
+        }
+
+        public void reload()
+        {  
+            mostrarContenido(new SubSecciones.Inventario.stock());
+            subMenu_inventario.ForeColor = Color.Black;
+            subMenu_inventario.BackColor = Color.White;
         }
 
         public void mostrarContenido(object contenido)
@@ -30,7 +38,7 @@ namespace login.Vista.Secciones
             fh.Dock = DockStyle.Fill;
             this.panelContainer.Controls.Add(fh);
             this.panelContainer.Tag = fh;
-            fh.Show();
+            fh.Show(); 
         }
 
         public void colors()
@@ -46,7 +54,8 @@ namespace login.Vista.Secciones
 
         private void subMenu_inventario_Click(object sender, EventArgs e)
         {
-            colors();
+            colors();  
+            mostrarContenido(new SubSecciones.Inventario.stock());
             subMenu_inventario.ForeColor = Color.Black;
             subMenu_inventario.BackColor = Color.White;
 
@@ -63,6 +72,16 @@ namespace login.Vista.Secciones
         { 
             SubSecciones.Inventario.RegistarProducto form = new SubSecciones.Inventario.RegistarProducto();
             form.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void reloadBtn_Click(object sender, EventArgs e)
+        {
+            mostrarContenido(new SubSecciones.Inventario.stock());
         }
     }
 }

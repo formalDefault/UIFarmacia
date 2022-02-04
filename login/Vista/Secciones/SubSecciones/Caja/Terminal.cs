@@ -13,12 +13,12 @@ namespace login.Vista.Secciones.SubSecciones.Caja
 {
     public partial class Terminal : Form
     {
-        ventas ventas = new ventas();   
+        Model.funcGenerales funciones = new Model.funcGenerales();  
 
         public Terminal()
         {
             InitializeComponent();
-            dataGridView1.DataSource = ventas.TablaProductos(); 
+            dataGridView1.DataSource = funciones.TablaDatos("SELECT * FROM productos"); 
         }
 
         private void button3_Click(object sender, EventArgs e)

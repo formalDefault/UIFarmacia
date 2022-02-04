@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inventario));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.reloadBtn = new System.Windows.Forms.Button();
             this.subMenu_addProducto = new System.Windows.Forms.Button();
             this.subMenu_devoluciones = new System.Windows.Forms.Button();
             this.subMenu_inventario = new System.Windows.Forms.Button();
@@ -39,6 +41,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(36)))), ((int)(((byte)(67)))));
+            this.panel1.Controls.Add(this.reloadBtn);
             this.panel1.Controls.Add(this.subMenu_addProducto);
             this.panel1.Controls.Add(this.subMenu_devoluciones);
             this.panel1.Controls.Add(this.subMenu_inventario);
@@ -48,9 +51,29 @@
             this.panel1.Size = new System.Drawing.Size(1455, 38);
             this.panel1.TabIndex = 6;
             // 
+            // reloadBtn
+            // 
+            this.reloadBtn.BackColor = System.Drawing.Color.Transparent;
+            this.reloadBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.reloadBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(36)))), ((int)(((byte)(67)))));
+            this.reloadBtn.FlatAppearance.BorderSize = 0;
+            this.reloadBtn.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.reloadBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.reloadBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.reloadBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.reloadBtn.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.reloadBtn.ForeColor = System.Drawing.Color.White;
+            this.reloadBtn.Image = ((System.Drawing.Image)(resources.GetObject("reloadBtn.Image")));
+            this.reloadBtn.Location = new System.Drawing.Point(1339, 0);
+            this.reloadBtn.Name = "reloadBtn";
+            this.reloadBtn.Size = new System.Drawing.Size(97, 35);
+            this.reloadBtn.TabIndex = 13;
+            this.reloadBtn.UseVisualStyleBackColor = false;
+            this.reloadBtn.Click += new System.EventHandler(this.reloadBtn_Click);
+            // 
             // subMenu_addProducto
             // 
-            this.subMenu_addProducto.BackColor = System.Drawing.Color.LimeGreen;
+            this.subMenu_addProducto.BackColor = System.Drawing.Color.Transparent;
             this.subMenu_addProducto.Cursor = System.Windows.Forms.Cursors.Hand;
             this.subMenu_addProducto.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(36)))), ((int)(((byte)(67)))));
             this.subMenu_addProducto.FlatAppearance.BorderSize = 0;
@@ -60,7 +83,7 @@
             this.subMenu_addProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.subMenu_addProducto.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.subMenu_addProducto.ForeColor = System.Drawing.Color.White;
-            this.subMenu_addProducto.Location = new System.Drawing.Point(1267, 0);
+            this.subMenu_addProducto.Location = new System.Drawing.Point(267, 0);
             this.subMenu_addProducto.Name = "subMenu_addProducto";
             this.subMenu_addProducto.Size = new System.Drawing.Size(172, 38);
             this.subMenu_addProducto.TabIndex = 12;
@@ -138,5 +161,6 @@
         private Button subMenu_devoluciones;
         private Button subMenu_inventario;
         private Button subMenu_addProducto;
+        private Button reloadBtn;
     }
 }

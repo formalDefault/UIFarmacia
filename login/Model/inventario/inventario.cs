@@ -17,27 +17,8 @@ namespace login.Model.inventario
         private string query;
         string date = DateTime.Now.ToString("yyyy/MM/dd");
         string datetime = DateTime.Now.ToString("hh:mm:ss");
-
-        //imprime los productos en la ventana ventas
-        public DataTable TablaProductoInventarios()
-        {
-            DataTable dt = new DataTable();
-            query = "SELECT p.id, p.`codigo`, p.`nombre`, p.`descripcion`, p.`costo`, p.`retail`, p.`mayoreo`, p.`categoria`, p.`periodoDevolucion_dias` as devolucion, SUM(e.cantidad) AS stock FROM productos AS p LEFT JOIN entradas AS e ON e.`idProducto` = p.`id` ";
-            try
-            {
-                con.Open();
-                adapter = new MySqlDataAdapter(query, con);
-                adapter.Fill(dt);
-                con.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Hubo un error en la base de datos", ex.Message);
-                con.Close();
-            }
-            return dt;
-        }
-    
+        Model.funcGenerales funciones = new Model.funcGenerales();  
+         
         //registra los productos en el catalogo (no se registran como inventario)
         public Boolean registrarProducto(string code, string name, string descrip, string costo, string retail, string mayoreo, string categoria, string devolucion) //registrar producto en el catalogo
         {
@@ -68,8 +49,59 @@ namespace login.Model.inventario
             }
         }
 
+        //se registra la compra de productos a un proveedor
+        public Boolean registrarCompra(int proveedor, string costoTotal, string descripcion)
+        {
+            query = "INSERT INTO compras ( idProveedor, costoTotal, fecha, hora, descripcion ) VALUES ( @prov, @total, @date, @time, @descripcion )";
+            try
+            {
+                con.Open();
+                command = new MySqlCommand(query, con);
+                command.Parameters.AddWithValue("@prov", proveedor);
+                command.Parameters.AddWithValue("@total", costoTotal);
+                command.Parameters.AddWithValue("@date", date);
+                command.Parameters.AddWithValue("@time", datetime);
+                command.Parameters.AddWithValue("@descripcion", descripcion);
+                command.ExecuteNonQuery(); 
+                con.Close();
+                setIdCompra();
+                return true;
+            } 
+            catch (Exception ex)
+            {
+                con.Close();
+                MessageBox.Show(ex.Message);
+                return false;
+            }
+        }
+         
+        //guarda el id de los productos
+        public void setIdProducto()
+        {
+            query = "SELECT id FROM productos";
+            varInventario variables = new varInventario(); 
+            try
+            {
+                con.Open();
+                command = new MySqlCommand(query, con); 
+                reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    variables.pushStackProductos(reader.GetInt16(0));
+                } 
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hubo un error "+ex.Message+" ");  
+            }
+            finally
+            {
+                con.Close();  
+            }
+        }
+
         //guarda el id de la compra en proceso
-        public void getIdCompra()
+        public void setIdCompra()
         {
             varInventario variables = new varInventario();
             query = "SELECT MAX(id) FROM compras";
@@ -90,141 +122,35 @@ namespace login.Model.inventario
             } 
         }
 
-        //se registra la compra de productos a un proveedor
-        public Boolean registrarCompra(string proveedor, string costoTotal, string descripcion)
+        //retorna el costo de una cantidad de un cierto producto 
+        public int precioProductos(int id, int cantidad)
         {
-            query = "INSERT INTO compras ( idProveedor, costoTotal, fecha, hora, descripcion ) VALUES ( @prov, @total, @date, @time, @descripcion )";
-            varInventario variables = new varInventario(); //quitar (solo se ocupa para mostrar el id de la compra)
-            try
-            {
-                con.Open();
-                command = new MySqlCommand(query, con);
-                command.Parameters.AddWithValue("@prov", proveedor);
-                command.Parameters.AddWithValue("@total", costoTotal);
-                command.Parameters.AddWithValue("@date", date);
-                command.Parameters.AddWithValue("@time", datetime);
-                command.Parameters.AddWithValue("@descripcion", descripcion);
-                command.ExecuteNonQuery(); 
-                con.Close();
-                getIdCompra();
-                MessageBox.Show("Se inicio la compra "+ variables.IdCompra + " ");//quitar el id de la compra
-                return true;
-            } 
-            catch (Exception ex)
-            {
-                con.Close();
-                MessageBox.Show(ex.Message);
-                return false;
-            }
-        }
-
-        //llena los combobox
-        public Boolean comboBox(ComboBox cb, string columnas, string tabla)
-        {
-            query = "SELECT "+columnas+" FROM "+tabla+" ";
-            try
-            {
-                con.Open();
-                command = new MySqlCommand(query, con);
-                reader = command.ExecuteReader();
-                command.CommandType = CommandType.StoredProcedure;
-
-                while (reader.Read())
-                {
-                    cb.ValueMember = String.Format("{0}", reader["id"]); 
-                    cb.Items.Add(String.Format("{0}", reader["nombre"])); 
-                }  
-                con.Close();
-                return true;
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show("Error en la base de datos", ex.Message);
-                con.Close();
-                return false;
-            }
-        }
-        
-        //(sobrecarga de comboBox) llena los combobox con flitros
-        public Boolean comboBox(ComboBox cb, string columnas, string tabla, string condiciones)
-        {
-            query = "SELECT "+columnas+" FROM "+tabla+" "+condiciones+" ";
-            try
-            {
-                con.Open();
-                command = new MySqlCommand(query, con);
-                reader = command.ExecuteReader();
-                command.CommandType = CommandType.StoredProcedure;
-
-                while (reader.Read())
-                {
-                    cb.ValueMember = String.Format("{0}", reader["id"]); 
-                    cb.Items.Add(String.Format("{0}", reader["nombre"])); 
-                }  
-                con.Close();
-                return true;
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show("Error en la base de datos", ex.Message);
-                con.Close();
-                return false;
-            }
-        }
-
-        //retorna el id del producto
-        public int getIdProducto(string name)
-        {
-            query = "SELECT id FROM productos WHERE nombre = @name";
-            try
-            {
-                con.Open();
-                command = new MySqlCommand(query, con);
-                command.Parameters.AddWithValue("@name", name);
-                reader = command.ExecuteReader(); 
-                reader.Read();
-                int id = reader.GetInt16(0); 
-                return id; 
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Hubo un error "+ex.Message+" "); 
-                return 0;
-            }
-            finally
-            {
-                con.Close();  
-            }
-        }
-
-        //retorna el id de la ultima compra
-        public int getIdEntrada()
-        {
-            query = "SELECT MAX(id) FROM entradas";
+            query = "SELECT (costo * " + cantidad + ") FROM productos WHERE id = " + id+" ";
             try
             {
                 con.Open();
                 command = new MySqlCommand(query, con);
                 reader = command.ExecuteReader();
                 reader.Read();
-                int id = reader.GetInt16(0);
-                return id;
+                int total = reader.GetInt16(0);
+                con.Close();
+                reader.Close();
+                return total;
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Hubo un error " + ex.Message + " ");
-                return 0;
-            }
-            finally
-            {
                 con.Close();
-            }
+                return 0;
+            } 
         }
 
         //registra la entrada de un producto
-        public Boolean regEntrada(int idProd, string cantidad)
+        public Boolean RegEntrada(int idProd, int cantidad, float total)
         {
-            query = "INSERT INTO entradas ( idProducto, cantidad, fecha, hora ) VALUES ( @idProd, @cant, @date, @time )";
+            query = "INSERT INTO entradas ( idProducto, cantidad, fecha, hora, total ) VALUES ( @idProd, @cant, @date, @time, @total )";
+            //query = "INSERT INTO entradas ( idProducto, cantidad, fecha, hora ) VALUES ( @idProd, @cant, @date, @time )";
+            varInventario variables = new varInventario(); 
             try
             {
                 con.Open();
@@ -233,7 +159,8 @@ namespace login.Model.inventario
                 command.Parameters.AddWithValue("@cant", cantidad);
                 command.Parameters.AddWithValue("@date", date);
                 command.Parameters.AddWithValue("@time", datetime);
-                command.ExecuteNonQuery();
+                command.Parameters.AddWithValue("@total", total);
+                command.ExecuteNonQuery(); 
                 con.Close();
                 return true;
             }
@@ -241,6 +168,7 @@ namespace login.Model.inventario
             {
                 MessageBox.Show("Error en la base de datos " + ex.Message + " ");
                 con.Close();
+                funciones.DeleteElement("compras", variables.IdCompra);
                 return false;
             }
         }
@@ -267,7 +195,7 @@ namespace login.Model.inventario
                 return false;
             }
         }
-
-
+         
+        
     }
 }

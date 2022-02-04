@@ -11,16 +11,27 @@ namespace login.Model.inventario
     {
         private static int idCompra;
         private static Stack<int> idEntradas = new Stack<int>();
+        private static Stack<int> idproductos = new Stack<int>();
 
         public int IdCompra { get => idCompra; set => idCompra = value; }
 
-        public void pushStack(int setId) { idEntradas.Push(setId); }
+        //funciones de la pila idEntradas
+        public void pushStackEntradas(int setId) { idEntradas.Push(setId); }
 
-        public void popStack() { idEntradas.Pop(); }
+        public void popStackEntradas() { idEntradas.Pop(); }
 
-        public int peekStack() { return idEntradas.Peek(); }
+        public int peekStackEntradas() { return idEntradas.Peek(); }
           
-        public int countStack() { return idEntradas.Count; }
+        public int countStackEntradas() { return idEntradas.Count; }
+
+        //funciones de la pila idProductos
+        public void pushStackProductos(int setId) { idproductos.Push(setId); }
+
+        public void popStackProductos() { idproductos.Pop(); }
+
+        public int peekStackProductos() { return idproductos.Peek(); }
+          
+        public int countStackProductos() { return idproductos.Count; }
 
     }
 }

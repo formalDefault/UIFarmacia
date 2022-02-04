@@ -12,11 +12,13 @@ namespace login.Vista.Secciones.SubSecciones.Inventario
 {
     public partial class AgregarEntrada : Form
     {
+        Model.inventario.inventario inventario = new Model.inventario.inventario();
+        Model.funcGenerales funciones = new Model.funcGenerales();  
+
         public AgregarEntrada()
         {
             InitializeComponent();
-            Model.inventario.inventario inventario = new Model.inventario.inventario();
-            inventario.comboBox(textProveedor, "id, nombre", "proveedores");
+            funciones.comboBox(textProveedor, "id, nombre", "proveedores");
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -26,7 +28,7 @@ namespace login.Vista.Secciones.SubSecciones.Inventario
 
         private void label2_Click_1(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Hide(); 
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -36,9 +38,8 @@ namespace login.Vista.Secciones.SubSecciones.Inventario
                 MessageBox.Show("Faltan campos por llenar");
             } 
             else
-            {
-                Model.inventario.inventario inventario = new Model.inventario.inventario();
-                if (inventario.registrarCompra(textProveedor.ValueMember, textTotal.Text, textDescripcion.Text))
+            { 
+                if (inventario.registrarCompra(funciones.GetId("proveedores", textProveedor.Text), textTotal.Text, textDescripcion.Text))
                 {
                     EntradaProducto entradaProducto = new EntradaProducto();
                     entradaProducto.Show();
