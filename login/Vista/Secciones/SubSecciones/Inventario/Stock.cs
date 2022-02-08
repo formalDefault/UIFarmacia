@@ -13,6 +13,8 @@ namespace login.Vista.Secciones.SubSecciones.Inventario
     public partial class stock : Form
     { 
         Model.funcGenerales funciones = new Model.funcGenerales();  
+        AgregarEntrada agregarEntrada = new AgregarEntrada();
+
         public stock()
         {
             InitializeComponent();
@@ -26,7 +28,6 @@ namespace login.Vista.Secciones.SubSecciones.Inventario
 
         private void button2_Click_1(object sender, EventArgs e)
         { 
-            Inventario.AgregarEntrada agregarEntrada = new Inventario.AgregarEntrada();
             agregarEntrada.Show();
         }
     }

@@ -20,14 +20,7 @@ namespace login.Vista.Secciones
             subMenu_inventario.ForeColor = Color.Black;
             subMenu_inventario.BackColor = Color.White;
 
-        }
-
-        public void reload()
-        {  
-            mostrarContenido(new SubSecciones.Inventario.stock());
-            subMenu_inventario.ForeColor = Color.Black;
-            subMenu_inventario.BackColor = Color.White;
-        }
+        } 
 
         public void mostrarContenido(object contenido)
         {

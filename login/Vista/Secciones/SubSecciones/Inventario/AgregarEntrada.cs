@@ -18,7 +18,7 @@ namespace login.Vista.Secciones.SubSecciones.Inventario
         public AgregarEntrada()
         {
             InitializeComponent();
-            funciones.comboBox(textProveedor, "id, nombre", "proveedores");
+            funciones.comboBox(textProveedor, "SELECT nombre FROM proveedores", "nombre");
         }
 
         private void label2_Click(object sender, EventArgs e)

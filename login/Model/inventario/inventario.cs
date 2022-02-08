@@ -43,7 +43,7 @@ namespace login.Model.inventario
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Hubo un error en la base de datos", ex.Message);
+                MessageBox.Show("Hubo un Error en la base de datos: ", ex.Message);
                 con.Close();
                 return false;
             }
@@ -92,7 +92,7 @@ namespace login.Model.inventario
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Hubo un error "+ex.Message+" ");  
+                MessageBox.Show("Error en la base de datos: " + ex.Message+" ");  
             }
             finally
             {
@@ -117,7 +117,7 @@ namespace login.Model.inventario
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Hubo un error", ex.Message);
+                MessageBox.Show("Error en la base de datos: ", ex.Message);
                 con.Close();
             } 
         }
@@ -148,8 +148,7 @@ namespace login.Model.inventario
         //registra la entrada de un producto
         public Boolean RegEntrada(int idProd, int cantidad, float total)
         {
-            query = "INSERT INTO entradas ( idProducto, cantidad, fecha, hora, total ) VALUES ( @idProd, @cant, @date, @time, @total )";
-            //query = "INSERT INTO entradas ( idProducto, cantidad, fecha, hora ) VALUES ( @idProd, @cant, @date, @time )";
+            query = "INSERT INTO entradas ( idProducto, cantidad, fecha, hora, total ) VALUES ( @idProd, @cant, @date, @time, @total )"; 
             varInventario variables = new varInventario(); 
             try
             {
@@ -166,7 +165,7 @@ namespace login.Model.inventario
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error en la base de datos " + ex.Message + " ");
+                MessageBox.Show("Error en la base de datos: " + ex.Message + " ");
                 con.Close();
                 funciones.DeleteElement("compras", variables.IdCompra);
                 return false;
@@ -196,6 +195,9 @@ namespace login.Model.inventario
             }
         }
          
+
+
+        //
         
     }
 }
