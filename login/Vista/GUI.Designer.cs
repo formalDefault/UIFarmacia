@@ -301,6 +301,7 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1532, 58);
             this.panel3.TabIndex = 2;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // panel4
             // 
@@ -353,7 +354,7 @@
             this.panelContainer.BackColor = System.Drawing.Color.White;
             this.panelContainer.Location = new System.Drawing.Point(103, 81);
             this.panelContainer.Name = "panelContainer";
-            this.panelContainer.Size = new System.Drawing.Size(1428, 726);
+            this.panelContainer.Size = new System.Drawing.Size(1428, 714);
             this.panelContainer.TabIndex = 3;
             // 
             // reloj
@@ -365,7 +366,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1529, 807);
+            this.ClientSize = new System.Drawing.Size(1460, 807);
             this.Controls.Add(this.panelContainer);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);

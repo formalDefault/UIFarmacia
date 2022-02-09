@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "coyJmVP338JKdm4gMQpSKFbj5Yt0/B8KaIUYzrXDgmZLRDBilSRzPDQjjR6fZls6r0NW7vU57Q+g5SNV23iyAA==",
+  "dgSpecHash": "j5jTF+Qw9typK7ghU1rtX5vwjimVIAscJCNYQcYVSGkJmvXmUvz7W7+3jnGDcldJx/BpB9uwA3RyjXHIc48QZw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Alejandro\\Source\\Repos\\formalDefault\\UIFarmacia\\login\\login.csproj",
+  "projectFilePath": "C:\\Users\\Alejandro\\source\\repos\\formalDefault\\UIFarmacia\\login\\login.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Alejandro\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
     "C:\\Users\\Alejandro\\.nuget\\packages\\google.protobuf\\3.14.0\\google.protobuf.3.14.0.nupkg.sha512",

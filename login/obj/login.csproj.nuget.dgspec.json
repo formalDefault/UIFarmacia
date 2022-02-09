@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alejandro\\Source\\Repos\\formalDefault\\UIFarmacia\\login\\login.csproj": {}
+    "C:\\Users\\Alejandro\\source\\repos\\formalDefault\\UIFarmacia\\login\\login.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alejandro\\Source\\Repos\\formalDefault\\UIFarmacia\\login\\login.csproj": {
+    "C:\\Users\\Alejandro\\source\\repos\\formalDefault\\UIFarmacia\\login\\login.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alejandro\\Source\\Repos\\formalDefault\\UIFarmacia\\login\\login.csproj",
+        "projectUniqueName": "C:\\Users\\Alejandro\\source\\repos\\formalDefault\\UIFarmacia\\login\\login.csproj",
         "projectName": "login",
-        "projectPath": "C:\\Users\\Alejandro\\Source\\Repos\\formalDefault\\UIFarmacia\\login\\login.csproj",
+        "projectPath": "C:\\Users\\Alejandro\\source\\repos\\formalDefault\\UIFarmacia\\login\\login.csproj",
         "packagesPath": "C:\\Users\\Alejandro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alejandro\\Source\\Repos\\formalDefault\\UIFarmacia\\login\\obj\\",
+        "outputPath": "C:\\Users\\Alejandro\\source\\repos\\formalDefault\\UIFarmacia\\login\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Alejandro\\AppData\\Roaming\\NuGet\\NuGet.Config",
