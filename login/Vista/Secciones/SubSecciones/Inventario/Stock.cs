@@ -18,7 +18,9 @@ namespace login.Vista.Secciones.SubSecciones.Inventario
         public stock()
         {
             InitializeComponent();
-            dataGridView1.DataSource = funciones.TablaDatos("SELECT p.id, p.`codigo`, p.`nombre`, p.`descripcion`, p.`costo`, p.`retail`, p.`mayoreo`, p.`categoria`, p.`periodoDevolucion_dias` as devolucion, SUM(e.cantidad) AS stock FROM productos AS p LEFT JOIN entradas AS e ON e.`idProducto` = p.`id` GROUP BY p.`id` ");
+            dataGridView1.DataSource = funciones.TablaDatos("SELECT p.id, p.`codigo`, p.`nombre`, p.`descripcion`, p.`costo`," +
+                " p.`retail`, p.`mayoreo`, p.`categoria`, p.`periodoDevolucion_dias` as devolucion, SUM(e.cantidad) AS stock " +
+                "FROM productos AS p LEFT JOIN entradas AS e ON e.`idProducto` = p.`id` GROUP BY p.`id` ");
         }
 
         private void button2_Click(object sender, EventArgs e)

@@ -197,7 +197,8 @@ namespace login.Model.inventario
          
 
 
-        //
+        //MODELO DE DATOS ENTRADAS
         
+
     }
 }

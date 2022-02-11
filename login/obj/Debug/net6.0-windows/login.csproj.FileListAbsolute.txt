@@ -46,3 +46,7 @@ C:\Users\HP\source\repos\login\login\obj\Debug\net6.0-windows\login.Vista.Seccio
 C:\Users\HP\source\repos\login\login\obj\Debug\net6.0-windows\login.Vista.Secciones.SubSecciones.Inventario.RegistarProducto.resources
 C:\Users\HP\source\repos\login\login\obj\Debug\net6.0-windows\login.Vista.Secciones.SubSecciones.Inventario.AgregarEntrada.resources
 C:\Users\HP\source\repos\login\login\obj\Debug\net6.0-windows\login.Vista.Secciones.SubSecciones.Inventario.EntradaProducto.resources
+C:\Users\HP\source\repos\login\login\obj\Debug\net6.0-windows\login.Vista.Secciones.SubSecciones.Inventario.Detalles.resources
+C:\Users\HP\source\repos\login\login\obj\Debug\net6.0-windows\login.Vista.Secciones.SubSecciones.Inventario.Salidas.resources
+C:\Users\HP\source\repos\login\login\obj\Debug\net6.0-windows\login.Vista.Secciones.SubSecciones.Clientes.Clientes.resources
+C:\Users\HP\source\repos\login\login\obj\Debug\net6.0-windows\login.Vista.Secciones.SubSecciones.Clientes.RegCliente.resources
