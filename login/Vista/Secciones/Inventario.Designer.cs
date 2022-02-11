@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inventario));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.subMenu_salidas = new System.Windows.Forms.Button();
+            this.subMenu_detalles = new System.Windows.Forms.Button();
             this.reloadBtn = new System.Windows.Forms.Button();
             this.subMenu_addProducto = new System.Windows.Forms.Button();
             this.subMenu_devoluciones = new System.Windows.Forms.Button();
@@ -41,6 +43,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(36)))), ((int)(((byte)(67)))));
+            this.panel1.Controls.Add(this.subMenu_salidas);
+            this.panel1.Controls.Add(this.subMenu_detalles);
             this.panel1.Controls.Add(this.reloadBtn);
             this.panel1.Controls.Add(this.subMenu_addProducto);
             this.panel1.Controls.Add(this.subMenu_devoluciones);
@@ -50,6 +54,46 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1455, 38);
             this.panel1.TabIndex = 6;
+            // 
+            // subMenu_salidas
+            // 
+            this.subMenu_salidas.BackColor = System.Drawing.Color.Transparent;
+            this.subMenu_salidas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.subMenu_salidas.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(36)))), ((int)(((byte)(67)))));
+            this.subMenu_salidas.FlatAppearance.BorderSize = 0;
+            this.subMenu_salidas.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.subMenu_salidas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
+            this.subMenu_salidas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
+            this.subMenu_salidas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.subMenu_salidas.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.subMenu_salidas.ForeColor = System.Drawing.Color.White;
+            this.subMenu_salidas.Location = new System.Drawing.Point(437, 0);
+            this.subMenu_salidas.Name = "subMenu_salidas";
+            this.subMenu_salidas.Size = new System.Drawing.Size(172, 38);
+            this.subMenu_salidas.TabIndex = 15;
+            this.subMenu_salidas.Text = "Detalles de salidas";
+            this.subMenu_salidas.UseVisualStyleBackColor = false;
+            this.subMenu_salidas.Click += new System.EventHandler(this.subMenu_salidas_Click);
+            // 
+            // subMenu_detalles
+            // 
+            this.subMenu_detalles.BackColor = System.Drawing.Color.Transparent;
+            this.subMenu_detalles.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.subMenu_detalles.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(36)))), ((int)(((byte)(67)))));
+            this.subMenu_detalles.FlatAppearance.BorderSize = 0;
+            this.subMenu_detalles.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.subMenu_detalles.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
+            this.subMenu_detalles.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
+            this.subMenu_detalles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.subMenu_detalles.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.subMenu_detalles.ForeColor = System.Drawing.Color.White;
+            this.subMenu_detalles.Location = new System.Drawing.Point(257, 0);
+            this.subMenu_detalles.Name = "subMenu_detalles";
+            this.subMenu_detalles.Size = new System.Drawing.Size(181, 38);
+            this.subMenu_detalles.TabIndex = 14;
+            this.subMenu_detalles.Text = "Detalles de entradas";
+            this.subMenu_detalles.UseVisualStyleBackColor = false;
+            this.subMenu_detalles.Click += new System.EventHandler(this.subMenu_detalles_Click);
             // 
             // reloadBtn
             // 
@@ -83,9 +127,9 @@
             this.subMenu_addProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.subMenu_addProducto.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.subMenu_addProducto.ForeColor = System.Drawing.Color.White;
-            this.subMenu_addProducto.Location = new System.Drawing.Point(267, 0);
+            this.subMenu_addProducto.Location = new System.Drawing.Point(604, 0);
             this.subMenu_addProducto.Name = "subMenu_addProducto";
-            this.subMenu_addProducto.Size = new System.Drawing.Size(172, 38);
+            this.subMenu_addProducto.Size = new System.Drawing.Size(168, 38);
             this.subMenu_addProducto.TabIndex = 12;
             this.subMenu_addProducto.Text = "Registar producto";
             this.subMenu_addProducto.UseVisualStyleBackColor = false;
@@ -162,5 +206,8 @@
         private Button subMenu_inventario;
         private Button subMenu_addProducto;
         private Button reloadBtn;
+        private Button subMenu_detalles;
+        private Button button1;
+        private Button subMenu_salidas;
     }
 }
