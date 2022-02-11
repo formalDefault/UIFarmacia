@@ -14,7 +14,7 @@ namespace login.Vista.Secciones.SubSecciones.Clientes
     {
         Model.funcGenerales funciones = new Model.funcGenerales();
         public Clientes()
-        {  
+        {      
             InitializeComponent();
             dataGridView1.DataSource = funciones.TablaDatos("SELECT * FROM clientes");
         }
