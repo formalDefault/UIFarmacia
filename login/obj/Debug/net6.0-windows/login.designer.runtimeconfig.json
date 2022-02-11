@@ -12,7 +12,7 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\Alejandro\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\HP\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\Alejandro\\.nuget\\packages"
     ],
     "configProperties": {
