@@ -122,7 +122,7 @@ namespace login.Model.inventario
             } 
         }
 
-        //retorna el costo de una cantidad de un cierto producto 
+        //retorna el costo por cantidad de un cierto producto 
         public int precioProductos(int id, int cantidad)
         {
             query = "SELECT (costo * " + cantidad + ") FROM productos WHERE id = " + id+" ";
