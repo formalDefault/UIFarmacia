@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\login",
+    "\\login\\Model",
+    "\\login\\Model\\inventario",
+    "\\login\\Vista",
+    "\\login\\Vista\\Secciones",
+    "\\login\\Vista\\Secciones\\SubSecciones",
+    "\\login\\Vista\\Secciones\\SubSecciones\\Caja",
+    "\\login\\Vista\\Secciones\\SubSecciones\\Clientes",
+    "\\login\\Vista\\Secciones\\SubSecciones\\Inventario"
+  ],
+  "SelectedNode": "\\login\\Model\\caja\\ventas.cs",
+  "PreviewInSolutionExplorer": false
+}

@@ -6,73 +6,86 @@ using System.Threading.Tasks;
 
 namespace login.Model.caja
 {
-    class PilaProducts
+     public static class PilaProducts 
     {
-        private varCaja topStack = new varCaja();
-        
-        public PilaProducts()
+        private static varCaja topStack = new varCaja();
+
+        static PilaProducts()
         {
             topStack = null;
         }
 
-        public void Push(int id)
+        public static Boolean Push(int id)
         {
-            varCaja stack = new varCaja();
-            stack.StackIdProduct = id;
-            stack.StackNext = null;
-            topStack = stack;
-        }
-
-        public void seeStack()
-        {
-            varCaja stack = new varCaja();
-            stack = topStack;
-
-            if(topStack != null)
+            varCaja Nuevo = new varCaja();
+            bool verificacion = seeStack().Any(x => x == id);
+            if(!verificacion)
             {
-                while(stack != null)
-                {
-                    MessageBox.Show("id de producto: " + stack.StackIdProduct);
-                    stack = stack.StackNext;
-                }
+                Nuevo.StackIdProduct = id; 
+                Nuevo.siguiente = topStack;
+                topStack = Nuevo;
+                return true;
             }
             else
             {
-                MessageBox.Show("La pila esta vacia");
+                MessageBox.Show("Id existente");
+                return false;
             }
+            
         }
 
-        public void popStack(int idProduct)
+        public static List<int> seeStack()
+        {
+            varCaja actual = new varCaja();
+            actual = topStack;
+            List<int> lista = new List<int>();    
+
+            if(topStack != null)
+            {
+                while (actual != null)
+                { 
+                    lista.Add(actual.StackIdProduct);
+                    actual = actual.siguiente;
+                }
+            }
+            //else
+            //{
+            //    MessageBox.Show("La pila esta vacia");
+            //}
+            return lista;
+        }
+
+        public static void popStack(int idProduct)
         {
             varCaja actual = new varCaja();
             actual = topStack;  
             varCaja anterior = new varCaja();
-            anterior = topStack;
+            anterior = null;
             bool encontrado = false;
             int idToDelete = idProduct;
-            if(topStack != null)
+            if (topStack != null)
             {
                 while (actual != null && encontrado != true)
-                {
-                    if(actual.StackIdProduct == idToDelete)
+                { 
+                    if (actual.StackIdProduct == idToDelete)
                     {
-                        if(actual == topStack)
+                        if (actual == topStack)
                         {
-                            topStack = topStack.StackNext;
+                            topStack = topStack.siguiente;
                         }
                         else
                         {
-                            anterior.StackNext = actual.StackNext;
+                            anterior.siguiente = actual.siguiente;
                         }
-                        MessageBox.Show("Producto eliminado del carrito");
+                        //MessageBox.Show("Producto eliminado del carrito"); //quitar
                         encontrado = true;
                     }
                     anterior = actual;
-                    actual = actual.StackNext;  
-                }
+                    actual = actual.siguiente;
+                } 
                 if (!encontrado)
                 {
-                    MessageBox.Show("Error: El id no esta en la pila");
+                    MessageBox.Show("Error: El id: "+idProduct+" no esta en la pila");
                 }
             }
             else

@@ -10,9 +10,9 @@ namespace login.Model.caja
         MySqlDataReader reader;
         private string query;
         string date = DateTime.Now.ToString("yyyy/MM/dd");
-        string datetime = DateTime.Now.ToString("hh:mm:ss");
+        string time = DateTime.Now.ToString("hh:mm:ss");
         Model.funcGenerales funciones = new Model.funcGenerales();
-
+         
         //guarda el id de la venta en proceso
         public void setIdVenta()
         {
@@ -35,17 +35,21 @@ namespace login.Model.caja
         }
 
         //registra la venta
-        public Boolean RegVenta()
+        public Boolean RegVenta(float total)
         {
-            query = "";
+            query = "INSERT INTO ventas (idCliente, fecha, hora, total, estado) VALUES (6, @date, @time, @total, 'completado') ";
             try
             {
                 con.Open();
                 command = new MySqlCommand(query, con);
-                //command.Parameters.AddWithValue("", );
+                command.Parameters.AddWithValue("@date", date);
+                command.Parameters.AddWithValue("@time", time);
+                command.Parameters.AddWithValue("@total", total);
                 command.ExecuteNonQuery();
                 con.Close();
+                regSalidas(total);
                 setIdVenta();
+                enlazarSalidasVentas();
                 return true;
             }
             catch (Exception ex)
@@ -57,48 +61,117 @@ namespace login.Model.caja
         }
 
         //registra la salidas de los productos
-        public Boolean regSalidas(int idProduct, int cantidad)
+        public Boolean regSalidas(float total)
         {
-            query = "";
+            query = "INSERT INTO salidas (idProducto, cantidad, fecha, hora, total) VALUES ( @producto, 1, @date, @time, @total )";
+
             try
-            {
-                con.Open();
-                command = new MySqlCommand(query, con);
-                //command.Parameters.AddWithValue("", );
-                command.ExecuteNonQuery();
-                con.Close();
+            {   
+                foreach(var i in Model.caja.PilaProducts.seeStack())
+                {
+                    con.Open();
+                    command = new MySqlCommand(query, con);
+                    command.Parameters.AddWithValue("@time", time);
+                    command.Parameters.AddWithValue("@date", date);
+                    command.Parameters.AddWithValue("@total", total);
+                    command.Parameters.AddWithValue("@producto", i);
+                    command.ExecuteNonQuery();
+                    pushStackSalidas(GetIdSalidas("SELECT MAX(id) FROM salidas "));
+                    con.Close();
+                    //MessageBox.Show(" Salida: "+peekStackSalidas()+" , Producto:"+i); //quitar
+                }
                 return true;
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error en la base de datos: "+ex.Message+" ", "vnts 03");
-                con.Close();
+                MessageBox.Show("Error en la base de datos: "+ex.Message+" ", "vnts 03"); 
+                borrarVenta(IdVenta);
                 return false;
             }
-        }
-
+        } 
+         
         //enlaza las salidas con una venta
-        public Boolean enlazarSalidasVentas(int idSalida)
+        public Boolean enlazarSalidasVentas()
         {
-            query = "";
+            query = "INSERT INTO venta_salidas (idVenta, idSalida) VALUES ( @venta, @salida )";
             try
             {
-                con.Open();
-                command = new MySqlCommand(query, con);
-                command.Parameters.AddWithValue("@venta", IdVenta);
-                command.Parameters.AddWithValue("@salida", idSalida);
-                command.ExecuteNonQuery();
-                con.Close();
-                MessageBox.Show("Se relacionaron las entradas con la compra " + IdVenta + "");
-                IdVenta = 0;
+                if(countStackSalidas() > 1 )
+                {
+                    for(byte i = 0; i <= countStackSalidas() + 1 ; i++)
+                    {
+                        con.Open();
+                        command = new MySqlCommand(query, con);
+                        command.Parameters.AddWithValue("@venta", IdVenta);
+                        command.Parameters.AddWithValue("@salida", peekStackSalidas());
+                        command.ExecuteNonQuery();
+                        con.Close();
+                        popStackSalidas();
+                    }
+                }
+                else
+                {
+                    con.Open();
+                    command = new MySqlCommand(query, con);
+                    command.Parameters.AddWithValue("@venta", IdVenta);
+                    command.Parameters.AddWithValue("@salida", peekStackSalidas());
+                    command.ExecuteNonQuery();
+                    con.Close();
+                    popStackSalidas();
+                }
+                
+                
                 return true;
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error en la base de datos: " + ex.Message + " ", "vnts 04");
                 con.Close();
+                borrarVenta(IdVenta);
                 return false;
             }
         }
+
+        //para borrar venta en caso de algun error
+        public Boolean borrarVenta(int id)
+        {
+            query = "DELETE FROM ventas WHERE id = "+id;
+            try
+            {
+                con.Open();
+                command = new MySqlCommand(query, con); 
+                command.ExecuteNonQuery();
+                con.Close();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error en la base de datos: " + ex.Message + " ", "vnts 05");
+                con.Close();
+                return false;
+            }
+        }
+
+        public int GetIdSalidas(string query)
+        {
+            //query = "SELECT MAX(id) FROM salidas ";
+            try
+            {
+                //con.Open();
+                command = new MySqlCommand(query, con);
+                reader = command.ExecuteReader();
+                reader.Read();
+                int id = Int16.Parse(reader.GetString(0));
+                reader.Close();
+                //con.Close();
+                return id;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hubo un error " + ex.Message + " ", "vnts 06");
+                return 0;
+            } 
+        }
+
     }
 }

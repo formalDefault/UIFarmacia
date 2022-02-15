@@ -54,12 +54,12 @@ namespace login
         private void button1_Click_2(object sender, EventArgs e)
         {
             Model.Usuarios user = new Model.Usuarios();
-            //if(user.Login(textBox1.Text, maskedTextBox1.Text))
-            //{
-            GUI gui = new GUI();
-            this.Hide();
-            gui.Show();
-            //}  
+            if (user.Login(textBox1.Text, maskedTextBox1.Text))
+            {
+                GUI gui = new GUI();
+                this.Hide();
+                gui.Show();
+            }
         }//Boton para enviar formulario
 
         private void panel1_MouseClick(object sender, MouseEventArgs e)

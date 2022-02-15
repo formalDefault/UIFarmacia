@@ -1,0 +1,576 @@
+﻿++Solución "login" ‎(1 de 1 proyecto)
+i:{00000000-0000-0000-0000-000000000000}:login.sln
+++login
+i:{00000000-0000-0000-0000-000000000000}:login
+++Dependencias
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:>752
+++Importaciones
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:>850
+++Properties
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\properties\
+++bin
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\bin\
+++Model
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\model\
+++caja
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\model\caja\
+++PilaProducts.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\model\caja\pilaproducts.cs
+++varCaja.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\model\caja\varcaja.cs
+++ventas.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\model\caja\ventas.cs
+++clientes
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\model\clientes\
+++clientes.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\model\clientes\clientes.cs
+++inventario
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\model\inventario\
+++funcGenerales.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\model\funcgenerales.cs
+++Usuarios.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\model\usuarios.cs
+++obj
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\
+++Debug
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\bin\debug\
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\debug\
+++net6.0-windows
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\bin\debug\net6.0-windows\
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\bin\release\net6.0-windows\
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\debug\net6.0-windows\
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\release\net6.0-windows\
+++Release
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\bin\release\
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\release\
+++ref
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\bin\debug\net6.0-windows\ref\
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\bin\release\net6.0-windows\ref\
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\debug\net6.0-windows\ref\
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\release\net6.0-windows\ref\
+++.NETCoreApp,Version=v6.0.AssemblyAttributes.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\debug\net6.0-windows\.netcoreapp,version=v6.0.assemblyattributes.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\release\net6.0-windows\.netcoreapp,version=v6.0.assemblyattributes.cs
+++login.AssemblyInfo.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\debug\net6.0-windows\login.assemblyinfo.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\release\net6.0-windows\login.assemblyinfo.cs
+++login.AssemblyInfoInputs.cache
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\debug\net6.0-windows\login.assemblyinfoinputs.cache
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\release\net6.0-windows\login.assemblyinfoinputs.cache
+++login.assets.cache
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\debug\net6.0-windows\login.assets.cache
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\release\net6.0-windows\login.assets.cache
+++login.GeneratedMSBuildEditorConfig.editorconfig
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\debug\net6.0-windows\login.generatedmsbuildeditorconfig.editorconfig
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\release\net6.0-windows\login.generatedmsbuildeditorconfig.editorconfig
+++login.GlobalUsings.g.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\debug\net6.0-windows\login.globalusings.g.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\release\net6.0-windows\login.globalusings.g.cs
+++login.csproj.nuget.dgspec.json
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\login.csproj.nuget.dgspec.json
+++login.csproj.nuget.g.props
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\login.csproj.nuget.g.props
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\login.csproj.nuget.g.props
+++login.csproj.nuget.g.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\login.csproj.nuget.g.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\login.csproj.nuget.g.targets
+++project.assets.json
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\project.assets.json
+++project.nuget.cache
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\project.nuget.cache
+++Vista
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\
+++Secciones
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\
+++SubSecciones
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\subsecciones\
+++Caja
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\subsecciones\caja\
+++Clientes
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\subsecciones\clientes\
+++Clientes.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\subsecciones\clientes\clientes.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\clientes.cs
+++RegCliente.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\subsecciones\clientes\regcliente.cs
+++Inventario
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\subsecciones\inventario\
+++AgregarEntrada.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\subsecciones\inventario\agregarentrada.cs
+++Detalles.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\subsecciones\inventario\detalles.cs
+++EntradaProducto.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\subsecciones\inventario\entradaproducto.cs
+++RegistarProducto.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\subsecciones\inventario\registarproducto.cs
+++RegistarProducto.Designer.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\subsecciones\inventario\registarproducto.designer.cs
+++RegistarProducto.resx
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\subsecciones\inventario\registarproducto.resx
+++Salidas.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\subsecciones\inventario\salidas.cs
+++Stock.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\subsecciones\inventario\stock.cs
+++Caja.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\caja.cs
+++Inventario.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\inventario.cs
+++Pedidos.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\pedidos.cs
+++Proveedores.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\proveedores.cs
+++usuario
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\usuario\
+++GUI.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\gui.cs
+++Variables.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\variables.cs
+++Program.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\program.cs
+++Analizadores
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:analizadores
+++Marcos de trabajo
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:marcos de trabajo
+++Paquetes
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:paquetes
+++Sdk.props
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\sdk\sdk.props
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.illink.tasks\sdk\sdk.props
+++Sdk.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\sdk\sdk.targets
+++DataSources
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\properties\datasources\
+++Resources.resx
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\properties\resources.resx
+++inventario.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\model\inventario\inventario.cs
+++varInventario.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\model\inventario\varinventario.cs
+++TempPE
+++apphost.exe
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\debug\net6.0-windows\apphost.exe
+++login.csproj.AssemblyReference.cache
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\debug\net6.0-windows\login.csproj.assemblyreference.cache
+++login.csproj.CopyComplete
+++login.csproj.CoreCompileInputs.cache
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\debug\net6.0-windows\login.csproj.corecompileinputs.cache
+++login.csproj.FileListAbsolute.txt
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\debug\net6.0-windows\login.csproj.filelistabsolute.txt
+++login.csproj.GenerateResource.cache
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\debug\net6.0-windows\login.csproj.generateresource.cache
+++login.designer.deps.json
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\debug\net6.0-windows\login.designer.deps.json
+++login.designer.runtimeconfig.json
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\debug\net6.0-windows\login.designer.runtimeconfig.json
+++login.dll
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\bin\debug\net6.0-windows\login.dll
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\bin\debug\net6.0-windows\ref\login.dll
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\debug\net6.0-windows\login.dll
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\debug\net6.0-windows\ref\login.dll
+++login.genruntimeconfig.cache
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\debug\net6.0-windows\login.genruntimeconfig.cache
+++login.GUI.resources
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\debug\net6.0-windows\login.gui.resources
+++login.Login.resources
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\debug\net6.0-windows\login.login.resources
+++login.pdb
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\bin\debug\net6.0-windows\login.pdb
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\debug\net6.0-windows\login.pdb
+++login.Properties.Resources.resources
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\debug\net6.0-windows\login.properties.resources.resources
+++login.SingUp.resources
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\debug\net6.0-windows\login.singup.resources
+++login.Vista.Secciones.Caja.resources
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\debug\net6.0-windows\login.vista.secciones.caja.resources
+++login.Vista.secciones.Clientes.resources
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\debug\net6.0-windows\login.vista.secciones.clientes.resources
+++login.Vista.Secciones.Inventario.resources
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\debug\net6.0-windows\login.vista.secciones.inventario.resources
+++login.Vista.Secciones.Pedidos.resources
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\debug\net6.0-windows\login.vista.secciones.pedidos.resources
+++login.Vista.Secciones.Proveedores.resources
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\debug\net6.0-windows\login.vista.secciones.proveedores.resources
+++login.Vista.Secciones.SubSecciones.Caja.Carrito.resources
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\debug\net6.0-windows\login.vista.secciones.subsecciones.caja.carrito.resources
+++login.Vista.Secciones.SubSecciones.Caja.Corte.resources
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\debug\net6.0-windows\login.vista.secciones.subsecciones.caja.corte.resources
+++login.Vista.Secciones.SubSecciones.Caja.Terminal.resources
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\debug\net6.0-windows\login.vista.secciones.subsecciones.caja.terminal.resources
+++login.Vista.Secciones.SubSecciones.Clientes.Clientes.resources
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\debug\net6.0-windows\login.vista.secciones.subsecciones.clientes.clientes.resources
+++login.Vista.Secciones.SubSecciones.Clientes.RegCliente.resources
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\debug\net6.0-windows\login.vista.secciones.subsecciones.clientes.regcliente.resources
+++login.Vista.Secciones.SubSecciones.Inventario.AgregarEntrada.resources
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\debug\net6.0-windows\login.vista.secciones.subsecciones.inventario.agregarentrada.resources
+++login.Vista.Secciones.SubSecciones.Inventario.Detalles.resources
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\debug\net6.0-windows\login.vista.secciones.subsecciones.inventario.detalles.resources
+++login.Vista.Secciones.SubSecciones.Inventario.EntradaProducto.resources
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\debug\net6.0-windows\login.vista.secciones.subsecciones.inventario.entradaproducto.resources
+++login.Vista.Secciones.SubSecciones.Inventario.RegistarProducto.resources
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\debug\net6.0-windows\login.vista.secciones.subsecciones.inventario.registarproducto.resources
+++login.Vista.Secciones.SubSecciones.Inventario.Salidas.resources
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\debug\net6.0-windows\login.vista.secciones.subsecciones.inventario.salidas.resources
+++login.Vista.Secciones.SubSecciones.Inventario.stock.resources
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\obj\debug\net6.0-windows\login.vista.secciones.subsecciones.inventario.stock.resources
+++Carrito.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\subsecciones\caja\carrito.cs
+++Corte.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\subsecciones\caja\corte.cs
+++Terminal.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\subsecciones\caja\terminal.cs
+++Clientes.Designer.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\subsecciones\clientes\clientes.designer.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\clientes.designer.cs
+++Clientes.resx
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\subsecciones\clientes\clientes.resx
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\clientes.resx
+++RegCliente.Designer.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\subsecciones\clientes\regcliente.designer.cs
+++RegCliente.resx
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\subsecciones\clientes\regcliente.resx
+++AgregarEntrada.Designer.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\subsecciones\inventario\agregarentrada.designer.cs
+++AgregarEntrada.resx
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\subsecciones\inventario\agregarentrada.resx
+++Detalles.Designer.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\subsecciones\inventario\detalles.designer.cs
+++Detalles.resx
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\subsecciones\inventario\detalles.resx
+++EntradaProducto.Designer.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\subsecciones\inventario\entradaproducto.designer.cs
+++EntradaProducto.resx
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\subsecciones\inventario\entradaproducto.resx
+++Salidas.Designer.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\subsecciones\inventario\salidas.designer.cs
+++Salidas.resx
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\subsecciones\inventario\salidas.resx
+++stock.Designer.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\subsecciones\inventario\stock.designer.cs
+++stock.resx
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\subsecciones\inventario\stock.resx
+++Caja.Designer.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\caja.designer.cs
+++Caja.resx
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\caja.resx
+++Inventario.Designer.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\inventario.designer.cs
+++Inventario.resx
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\inventario.resx
+++Pedidos.Designer.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\pedidos.designer.cs
+++Pedidos.resx
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\pedidos.resx
+++Proveedores.Designer.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\proveedores.designer.cs
+++Proveedores.resx
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\proveedores.resx
+++Login.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\usuario\login.cs
+++SingUp.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\usuario\singup.cs
+++GUI.Designer.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\gui.designer.cs
+++GUI.resx
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\gui.resx
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++System.Text.Json.SourceGeneration
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.1\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+++System.Windows.Forms.Analyzers
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\packs\microsoft.windowsdesktop.app.ref\6.0.0\analyzers\dotnet\system.windows.forms.analyzers.dll
+++System.Windows.Forms.Analyzers.CSharp
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\packs\microsoft.windowsdesktop.app.ref\6.0.0\analyzers\dotnet\cs\system.windows.forms.analyzers.csharp.dll
+++Microsoft.NETCore.App
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\microsoft.netcore.app
+++Microsoft.WindowsDesktop.App.WindowsForms
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\microsoft.windowsdesktop.app.windowsforms
+++MySql.Data (8.0.28)
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:>1180
+++MySqlConnector (2.1.2)
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:>1181
+++System.Data.SqlClient (4.8.3)
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:>1179
+++Microsoft.Common.props
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\microsoft visual studio\2022\professional\msbuild\current\microsoft.common.props
+++Microsoft.NET.Sdk.props
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.props
+++Microsoft.NET.Sdk.BeforeCommon.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.beforecommon.targets
+++Microsoft.CSharp.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\microsoft visual studio\2022\professional\msbuild\current\bin\amd64\microsoft.csharp.targets
+++Microsoft.NET.Sdk.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.targets
+++Microsoft.NET.Compatibility.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.compatibility.targets
+++NuGet.Build.Tasks.Pack.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\nuget.build.tasks.pack\build\nuget.build.tasks.pack.targets
+++login.Model.caja.varCaja.datasource
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\properties\datasources\login.model.caja.varcaja.datasource
+++Resources.Designer.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\properties\resources.designer.cs
+++Properties.Resources.Designer.cs.dll
+++Carrito.Designer.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\subsecciones\caja\carrito.designer.cs
+++Carrito.resx
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\subsecciones\caja\carrito.resx
+++Corte.Designer.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\subsecciones\caja\corte.designer.cs
+++Corte.resx
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\subsecciones\caja\corte.resx
+++Terminal.Designer.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\subsecciones\caja\terminal.designer.cs
+++Terminal.resx
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\secciones\subsecciones\caja\terminal.resx
+++Login.Designer.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\usuario\login.designer.cs
+++Login.resx
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\usuario\login.resx
+++SingUp.Designer.cs
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\usuario\singup.designer.cs
+++SingUp.resx
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\vista\usuario\singup.resx
+++Microsoft.NuGet.ImportBefore.props
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\microsoft visual studio\2022\professional\msbuild\current\imports\microsoft.common.props\importbefore\microsoft.nuget.importbefore.props
+++NuGet.props
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\microsoft visual studio\2022\professional\common7\ide\commonextensions\microsoft\nuget\nuget.props
+++Microsoft.NET.Sdk.DefaultItems.props
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.defaultitems.props
+++Microsoft.NET.Sdk.ImportWorkloads.props
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.importworkloads.props
+++Microsoft.NET.SupportedTargetFrameworks.props
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.supportedtargetframeworks.props
+++Microsoft.NET.SupportedPlatforms.props
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.supportedplatforms.props
+++Microsoft.NET.WindowsSdkSupportedTargetPlatforms.props
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.windowssdksupportedtargetplatforms.props
+++Microsoft.NET.Sdk.CSharp.props
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.csharp.props
+++Microsoft.NET.ILLink.props
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.illink.props
+++Microsoft.NET.Compatibility.props
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.compatibility.props
+++Microsoft.NET.PackTool.props
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.packtool.props
+++Microsoft.NET.PackProjectTool.props
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.packprojecttool.props
+++Microsoft.NET.Sdk.WindowsDesktop.props
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.windowsdesktop\targets\microsoft.net.sdk.windowsdesktop.props
+++Microsoft.NET.Windows.props
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.windows.props
+++Microsoft.NET.DefaultAssemblyInfo.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.defaultassemblyinfo.targets
+++Microsoft.NET.DefaultOutputPaths.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.defaultoutputpaths.targets
+++Microsoft.NET.Sdk.ImportPublishProfile.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.importpublishprofile.targets
+++Microsoft.NET.TargetFrameworkInference.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.targetframeworkinference.targets
+++Microsoft.NET.Sdk.ImportWorkloads.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.importworkloads.targets
+++Microsoft.NET.RuntimeIdentifierInference.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.runtimeidentifierinference.targets
+++Microsoft.NET.EolTargetFrameworks.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.eoltargetframeworks.targets
+++Microsoft.NET.NuGetOfflineCache.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.nugetofflinecache.targets
+++Microsoft.Managed.Before.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\microsoft visual studio\2022\professional\msbuild\current\bin\amd64\microsoft.managed.before.targets
+++Microsoft.CSharp.CurrentVersion.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\microsoft visual studio\2022\professional\msbuild\current\bin\amd64\microsoft.csharp.currentversion.targets
+++Microsoft.Managed.After.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\microsoft visual studio\2022\professional\msbuild\current\bin\amd64\microsoft.managed.after.targets
+++Microsoft.NET.Sdk.Common.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.common.targets
+++Microsoft.PackageDependencyResolution.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.packagedependencyresolution.targets
+++Microsoft.NET.Sdk.DefaultItems.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.defaultitems.targets
+++Microsoft.NET.Sdk.FrameworkReferenceResolution.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.frameworkreferenceresolution.targets
+++Microsoft.NET.Sdk.Shared.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.shared.targets
+++Microsoft.NET.DisableStandardFrameworkResolution.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.disablestandardframeworkresolution.targets
+++Microsoft.NET.DesignerSupport.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.designersupport.targets
+++Microsoft.NET.GenerateAssemblyInfo.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.generateassemblyinfo.targets
+++Microsoft.NET.GenerateGlobalUsings.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.generateglobalusings.targets
+++Microsoft.NET.GenerateSupportedRuntime.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.generatesupportedruntime.targets
+++Microsoft.NET.ComposeStore.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.composestore.targets
+++Microsoft.NET.CrossGen.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.crossgen.targets
+++Microsoft.NET.ObsoleteReferences.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.obsoletereferences.targets
+++Microsoft.NET.Publish.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.publish.targets
+++Microsoft.NET.PackTool.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.packtool.targets
+++Microsoft.NET.PackProjectTool.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.packprojecttool.targets
+++Microsoft.NET.PreserveCompilationContext.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.preservecompilationcontext.targets
+++Microsoft.NET.ConflictResolution.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.conflictresolution.targets
+++Microsoft.NET.Sdk.CSharp.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.csharp.targets
+++Microsoft.NET.ILLink.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.illink.targets
+++Microsoft.NET.Sdk.Analyzers.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.analyzers.targets
+++Microsoft.NET.Windows.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.windows.targets
+++Microsoft.NET.Sdk.WindowsDesktop.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.windowsdesktop\targets\microsoft.net.sdk.windowsdesktop.targets
+++Microsoft.NET.Compatibility.Common.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.compatibility.common.targets
+++runtimes
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\bin\debug\net6.0-windows\runtimes\
+++BouncyCastle.Crypto.dll
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\bin\debug\net6.0-windows\bouncycastle.crypto.dll
+++Google.Protobuf.dll
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\bin\debug\net6.0-windows\google.protobuf.dll
+++K4os.Compression.LZ4.dll
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\bin\debug\net6.0-windows\k4os.compression.lz4.dll
+++K4os.Compression.LZ4.Streams.dll
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\bin\debug\net6.0-windows\k4os.compression.lz4.streams.dll
+++K4os.Hash.xxHash.dll
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\bin\debug\net6.0-windows\k4os.hash.xxhash.dll
+++login.deps.json
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\bin\debug\net6.0-windows\login.deps.json
+++login.exe
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\bin\debug\net6.0-windows\login.exe
+++login.runtimeconfig.json
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\bin\debug\net6.0-windows\login.runtimeconfig.json
+++MySql.Data.dll
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\bin\debug\net6.0-windows\mysql.data.dll
+++MySqlConnector.dll
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\bin\debug\net6.0-windows\mysqlconnector.dll
+++System.Data.SqlClient.dll
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\bin\debug\net6.0-windows\system.data.sqlclient.dll
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\bin\debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\system.data.sqlclient.dll
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\bin\debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\system.data.sqlclient.dll
+++Ubiety.Dns.Core.dll
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\bin\debug\net6.0-windows\ubiety.dns.core.dll
+++ZstdNet.dll
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\bin\debug\net6.0-windows\zstdnet.dll
+++Microsoft.NuGet.props
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\microsoft visual studio\2022\professional\msbuild\microsoft\nuget\17.0\microsoft.nuget.props
+++Microsoft.NETCoreSdk.BundledVersions.props
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\microsoft.netcoresdk.bundledversions.props
+++Microsoft.NET.Sdk.WindowsDesktop.WindowsForms.props
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.windowsdesktop\targets\microsoft.net.sdk.windowsdesktop.windowsforms.props
+++Microsoft.NET.Sdk.WindowsDesktop.WPF.props
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.windowsdesktop\targets\microsoft.net.sdk.windowsdesktop.wpf.props
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.android)
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.android\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.ios)
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.ios\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.maccatalyst)
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.maccatalyst\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.macos)
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.macos\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.maui)
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.maui\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.tvos)
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.tvos\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.workload.emscripten)
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk-manifests\6.0.100\microsoft.net.workload.emscripten\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.workload.mono.toolchain)
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk-manifests\6.0.100\microsoft.net.workload.mono.toolchain\workloadmanifest.targets
+++Microsoft.CSharp.Core.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\microsoft visual studio\2022\professional\msbuild\current\bin\roslyn\microsoft.csharp.core.targets
+++Microsoft.CSharp.DesignTime.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\microsoft visual studio\2022\professional\msbuild\microsoft\visualstudio\managed\microsoft.csharp.designtime.targets
+++Microsoft.Common.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\microsoft visual studio\2022\professional\msbuild\current\bin\amd64\microsoft.common.targets
+++Microsoft.ServiceModel.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\microsoft visual studio\2022\professional\msbuild\current\bin\amd64\microsoft.servicemodel.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\windows\microsoft.net\framework\v4.0.30319\microsoft.servicemodel.targets
+++Microsoft.NET.Sdk.DefaultItems.Shared.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.defaultitems.shared.targets
+++Microsoft.NETCoreSdk.BundledCliTools.props
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\microsoft.netcoresdk.bundledclitools.props
+++Microsoft.NET.DefaultPackageConflictOverrides.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.defaultpackageconflictoverrides.targets
+++Microsoft.CodeAnalysis.NetAnalyzers.props
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\build\microsoft.codeanalysis.netanalyzers.props
+++Microsoft.CodeAnalysis.NetAnalyzers.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\build\microsoft.codeanalysis.netanalyzers.targets
+++Microsoft.NET.Sdk.WindowsDesktop.WindowsForms.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.windowsdesktop\targets\microsoft.net.sdk.windowsdesktop.windowsforms.targets
+++Microsoft.WinFX.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.windowsdesktop\targets\microsoft.winfx.targets
+++unix
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\bin\debug\net6.0-windows\runtimes\unix\
+++win
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\bin\debug\net6.0-windows\runtimes\win\
+++win-arm64
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\bin\debug\net6.0-windows\runtimes\win-arm64\
+++win-x64
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\bin\debug\net6.0-windows\runtimes\win-x64\
+++win-x86
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\bin\debug\net6.0-windows\runtimes\win-x86\
+++Microsoft.NET.ILLink.Tasks.props
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.illink.tasks\build\microsoft.net.illink.tasks.props
+++System.Windows.Forms.Analyzers.props
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.windowsdesktop\targets\system.windows.forms.analyzers.props
+++Microsoft.Managed.Core.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\microsoft visual studio\2022\professional\msbuild\current\bin\roslyn\microsoft.managed.core.targets
+++Microsoft.Managed.DesignTime.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\microsoft visual studio\2022\professional\msbuild\microsoft\visualstudio\managed\microsoft.managed.designtime.targets
+++Microsoft.Common.CurrentVersion.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\microsoft visual studio\2022\professional\msbuild\current\bin\amd64\microsoft.common.currentversion.targets
+++lib
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\bin\debug\net6.0-windows\runtimes\unix\lib\
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\bin\debug\net6.0-windows\runtimes\win\lib\
+++native
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\bin\debug\net6.0-windows\runtimes\win-arm64\native\
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\bin\debug\net6.0-windows\runtimes\win-x64\native\
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\bin\debug\net6.0-windows\runtimes\win-x86\native\
+++Microsoft.Managed.Core.CurrentVersions.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\microsoft visual studio\2022\professional\msbuild\current\bin\roslyn\microsoft.managed.core.currentversions.targets
+++Microsoft.Cpp.VCLibs120Universal.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\microsoft visual studio\2022\professional\msbuild\current\microsoft.common.targets\importbefore\microsoft.cpp.vclibs120universal.targets
+++login.csproj.user
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\login.csproj.user
+++Microsoft.NET.props
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\microsoft visual studio\2022\professional\msbuild\current\bin\amd64\microsoft.net.props
+++Microsoft.CodeAnalysis.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\microsoft visual studio\2022\professional\msbuild\microsoft\visualstudio\v17.0\codeanalysis\microsoft.codeanalysis.targets
+++Microsoft.Xaml.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\microsoft visual studio\2022\professional\msbuild\current\bin\amd64\microsoft.xaml.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\windows\microsoft.net\framework\v4.0.30319\microsoft.xaml.targets
+++Microsoft.WorkflowBuildExtensions.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\microsoft visual studio\2022\professional\msbuild\current\bin\amd64\microsoft.workflowbuildextensions.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\windows\microsoft.net\framework\v4.0.30319\microsoft.workflowbuildextensions.targets
+++Microsoft.TeamTest.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\microsoft visual studio\2022\professional\msbuild\microsoft\visualstudio\v17.0\teamtest\microsoft.teamtest.targets
+++NuGet.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\microsoft visual studio\2022\professional\common7\ide\commonextensions\microsoft\nuget\nuget.targets
+++Microsoft.DesktopBridge.ImportAfter.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\microsoft visual studio\2022\professional\msbuild\current\microsoft.common.targets\importafter\microsoft.desktopbridge.importafter.targets
+++Microsoft.NET.Build.Extensions.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\microsoft visual studio\2022\professional\msbuild\current\microsoft.common.targets\importafter\microsoft.net.build.extensions.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\microsoft visual studio\2022\professional\msbuild\microsoft\microsoft.net.build.extensions\microsoft.net.build.extensions.targets
+++Microsoft.NuGet.ImportAfter.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\microsoft visual studio\2022\professional\msbuild\current\microsoft.common.targets\importafter\microsoft.nuget.importafter.targets
+++Microsoft.Web.ImportAfter.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\microsoft visual studio\2022\professional\msbuild\current\microsoft.common.targets\importafter\microsoft.web.importafter.targets
+++Xamarin.Common.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\microsoft visual studio\2022\professional\msbuild\current\microsoft.common.targets\importafter\xamarin.common.targets
+++netcoreapp2.1
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\bin\debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\bin\debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\
+++sni.dll
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\bin\debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\bin\debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\users\hp\source\repos\formaldefault\uifarmacia\login\bin\debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+++Microsoft.DesktopBridge.Common.targets
+i:{2ad70676-e3f2-481b-9711-f2358b6c4669}:c:\program files\microsoft visual studio\2022\professional\msbuild\microsoft\desktopbridge\microsoft.desktopbridge.common.targets
+++.editorconfig

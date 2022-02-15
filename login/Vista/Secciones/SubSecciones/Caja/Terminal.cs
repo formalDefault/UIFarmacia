@@ -1,19 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using login.Model.caja;
-
-namespace login.Vista.Secciones.SubSecciones.Caja
+﻿namespace login.Vista.Secciones.SubSecciones.Caja
 {
     public partial class Terminal : Form
     {
-        Model.funcGenerales funciones = new Model.funcGenerales();  
+        Model.funcGenerales funciones = new Model.funcGenerales(); 
+        static int idProducto = 0; 
 
         public Terminal()
         {
@@ -21,8 +11,35 @@ namespace login.Vista.Secciones.SubSecciones.Caja
             dataGridView1.DataSource = funciones.TablaDatos("SELECT * FROM productos"); 
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnAddProduct_Click(object sender, EventArgs e)
+        {
+            if(idProducto != 0)
+            {
+                if (Model.caja.PilaProducts.Push(idProducto)) MessageBox.Show("Producto agregado al carrito de compras");
+            }
+            else
+            {
+                MessageBox.Show("Elige un producto primero");
+            }
+        }
+
+        //Obtiene el id de la fila selecciona en la tabla
+        public static string GetValorCelda(DataGridView dgv, int num)
         { 
-        } 
+            string valor = dgv.Rows[dgv.CurrentRow.Index].Cells[num].Value.ToString();
+
+            return valor;
+        }
+
+        private void dataGridView1_Click(object sender, EventArgs e)
+        {
+            idProducto = Int16.Parse(GetValorCelda(dataGridView1, 0));
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            string asd = string.Join(", ", Model.caja.PilaProducts.seeStack());
+            MessageBox.Show(asd);
+        }
     }
 }

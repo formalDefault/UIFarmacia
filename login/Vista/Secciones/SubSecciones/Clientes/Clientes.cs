@@ -16,7 +16,8 @@ namespace login.Vista.Secciones.SubSecciones.Clientes
         public Clientes()
         {      
             InitializeComponent();
-            dataGridView1.DataSource = funciones.TablaDatos("SELECT * FROM clientes");
+            dataGridView1.DataSource = funciones.TablaDatos("SELECT * FROM clientes"); 
         }
     }
 }
+  

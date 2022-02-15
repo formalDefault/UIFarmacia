@@ -32,7 +32,7 @@ namespace login.Model
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Hubo un error en la base de datos", ex.Message);
+                MessageBox.Show("Hubo un error en la base de datos: "+ ex.Message+" ");
                 con.Close();
             }
             return dt;
@@ -79,7 +79,7 @@ namespace login.Model
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Hubo un error " + ex.Message + " ");
+                MessageBox.Show("Hubo un error: " + ex.Message + " ");
                 return 0;
             }
             finally
@@ -103,7 +103,7 @@ namespace login.Model
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Hubo un error " + ex.Message + " ");
+                MessageBox.Show("Hubo un error: " + ex.Message + " ");
                 return 0;
             }
             finally
@@ -111,6 +111,31 @@ namespace login.Model
                 con.Close();
             }
         }
+
+        //retorna el campo de la tabla dependiendo de las condiciones
+        public string GetCampo(string tabla,string columna , string condiciones)
+        {
+            query = "SELECT "+columna+" FROM " + tabla + " WHERE "+condiciones+" ";
+            try
+            {
+                con.Open();
+                command = new MySqlCommand(query, con); 
+                reader = command.ExecuteReader();
+                reader.Read();
+                string campo = reader.GetString(0);
+                return campo;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hubo un error " + ex.Message + " ");
+                return "";
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
 
         //Elimina un registro de la base de datos
         public Boolean DeleteElement(string tabla, int idElement)
