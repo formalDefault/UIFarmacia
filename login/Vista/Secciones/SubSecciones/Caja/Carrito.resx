@@ -144,7 +144,7 @@
   <data name="panel3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAfwAAAIFCAYAAAA3J09fAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vQAADr0BR/uQrQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAysSURBVHhe7d1b
+        vAAADrwBlbxySQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAysSURBVHhe7d1b
         j151GcbhQVs2Aioe2MCBlAhtESVgW84oRRIJIXyByk4ItqglYZMgGJDWYiIBhcRot3aLJPglfZ61muiU
         1g7tbN617utKbub/vidNOflNZ9611tIG21zbXXuudqR2onb8kh0zMzObwC7tVzet2/ZsrVvXzYvSf+nf
         1f5ZO1r7VW1P7fs1AJiTLbXHavtr3bxu39u1XbVZuqf2fu187WBtew0AEu2ovVbrJr5X21qbvJ/VztUO
@@ -202,7 +202,4 @@
         WHS3AAAAAElFTkSuQmCC
 </value>
   </data>
-  <metadata name="cantidad.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
 </root>

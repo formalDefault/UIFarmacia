@@ -22,7 +22,7 @@ namespace login.Vista.Secciones.SubSecciones.Caja
             string ids = string.Join(", ", Model.caja.PilaProducts.seeStack());
             if(ids.Equals(""))
             {
-                dataGridView1.Visible = false; 
+                dataGridView1.Visible = false;  
                 cobrar_btn.Visible = false; 
             }
             else
@@ -62,7 +62,7 @@ namespace login.Vista.Secciones.SubSecciones.Caja
             Model.caja.PilaProducts.popStack(idProduct);
             string ids = string.Join(", ", Model.caja.PilaProducts.seeStack());
             if (ids.Equals(""))
-            {
+            { 
                 dataGridView1.Visible = false; 
                 labelTotal.Text = "$0.00";
                 cobrar_btn.Visible = false;
@@ -76,7 +76,7 @@ namespace login.Vista.Secciones.SubSecciones.Caja
 
         private void dataGridView1_Click(object sender, EventArgs e)
         {
-            idProduct = Int16.Parse(GetValorCelda(dataGridView1, 1)); 
+            idProduct = Int16.Parse(GetValorCelda(dataGridView1, 0)); 
         }
 
         //limpia la pila y restablece la ventana
@@ -86,7 +86,7 @@ namespace login.Vista.Secciones.SubSecciones.Caja
             {
                 Model.caja.PilaProducts.popStack(i);
             }
-            dataGridView1.Visible = false;
+            dataGridView1.Visible = false; 
             labelTotal.Text = "$0.00"; 
             cobrar_btn.Visible = false;
         }
@@ -119,7 +119,7 @@ namespace login.Vista.Secciones.SubSecciones.Caja
             string ids = string.Join(", ", Model.caja.PilaProducts.seeStack());
             if (ids.Equals(""))
             {
-                dataGridView1.Visible = false;
+                dataGridView1.Visible = false; 
                 labelTotal.Text = "$0.00";
                 cobrar_btn.Visible = false;
             }
