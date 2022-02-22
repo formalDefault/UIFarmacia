@@ -77,13 +77,12 @@ namespace login.Vista.Secciones
             colors();
             subMenu_carrito.BackColor = Color.White;
             subMenu_carrito.ForeColor = Color.Black;
-            mostrarContenido(new SubSecciones.Caja.Carrito());
+            mostrarContenido(SubSecciones.Caja.Carrito.Instance);
         }
 
         private void subMenu_facturacion_Click(object sender, EventArgs e)
         {
-            SubSecciones.Caja.Carrito carrito = new SubSecciones.Caja.Carrito();
-            carrito.limpiar();
+            
         }
     }
 }

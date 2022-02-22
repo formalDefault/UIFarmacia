@@ -9,7 +9,23 @@ namespace login.Vista.Secciones.SubSecciones.Caja
         static int idProduct = 0;
         float costoTotal = 0;
 
-        public Carrito()
+
+        //patron singleton  
+        private static Carrito instancia = null;
+
+        public static Carrito Instance
+        {
+            get
+            {
+                if (instancia == null)
+                {
+                    instancia = new Carrito();
+                } 
+                return instancia;
+            }
+        } 
+
+        protected Carrito()
         {
             InitializeComponent();
             dataGridView2.Columns["id"].Visible = false;
@@ -30,6 +46,8 @@ namespace login.Vista.Secciones.SubSecciones.Caja
 
             if (radioButton1.Checked) panelCliente.Visible = false;
         }
+        //fin del patron singleton
+
 
         //Obtiene el id de la fila selecciona en la tabla
         public static string GetValorCelda(DataGridView dgv, int num)
