@@ -16,6 +16,9 @@
             if(idProducto != 0)
             {
                 if (Model.caja.PilaProducts.Push(idProducto)) MessageBox.Show("Producto agregado al carrito de compras");
+
+                //Model.caja.PilaProducts.PushCantidad(1);
+                MessageBox.Show("Cantidad del producto "+idProducto+" agregado");
             }
             else
             {

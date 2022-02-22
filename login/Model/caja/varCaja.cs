@@ -14,15 +14,7 @@
 
         public int StackIdProduct { get => stackIdProduct; set => stackIdProduct = value; }
         public varCaja siguiente { get => stackNext; set => stackNext = value; }
-
-        //funciones de la pila cantidad de producto
-        private int stackCantidad;
-        private varCaja stackCantidaNext;
-
-        public int StackCantidad { get => stackCantidad; set => stackCantidad = value; }
-        public varCaja siguienteCantidad { get => stackCantidaNext; set => stackCantidaNext = value; }
-         
-
+          
         //funciones de la pila salidas
         private static Stack<int> idSalidas = new Stack<int>();
 

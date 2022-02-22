@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MySql.Data.MySqlClient;
+﻿using MySql.Data.MySqlClient;
 using System.Data;
 
 namespace login.Model
 {
-    class funcGenerales
+    class funcGenerales : Conexion
     {
         MySqlConnection con = new MySqlConnection("datasource=127.0.0.1;port=3306;username=root;password=default_local;database=pos;");
         MySqlCommand command;
@@ -17,7 +12,7 @@ namespace login.Model
         private string query;
         string date = DateTime.Now.ToString("yyyy/MM/dd");
         string datetime = DateTime.Now.ToString("hh:mm:ss");
-
+         
         //imprime datos en datagridview
         public DataTable TablaDatos(string querySql)
         {
@@ -32,7 +27,7 @@ namespace login.Model
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Hubo un error en la base de datos: "+ ex.Message+" ");
+                MessageBox.Show("Hubo un error en la base de datos: " + ex.Message + " ", "funcG 1");
                 con.Close();
             }
             return dt;
@@ -40,7 +35,7 @@ namespace login.Model
 
         //llena los combobox
         public Boolean comboBox(ComboBox cb, string query, string columnName)
-        { 
+        {
             try
             {
                 con.Open();
@@ -49,15 +44,15 @@ namespace login.Model
                 command.CommandType = CommandType.StoredProcedure;
 
                 while (reader.Read())
-                { 
-                    cb.Items.Add(String.Format("{0}", reader[""+columnName+""]));
+                {
+                    cb.Items.Add(String.Format("{0}", reader["" + columnName + ""]));
                 }
                 con.Close();
                 return true;
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error en la base de datos", ex.Message);
+                MessageBox.Show("Error en la base de datos: "+ ex.Message+" ", "funcG 2");
                 con.Close();
                 return false;
             }
@@ -79,7 +74,7 @@ namespace login.Model
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Hubo un error: " + ex.Message + " ");
+                MessageBox.Show("Hubo un error: " + ex.Message + " ", "funcG 3");
                 return 0;
             }
             finally
@@ -103,7 +98,7 @@ namespace login.Model
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Hubo un error: " + ex.Message + " ");
+                MessageBox.Show("Hubo un error: " + ex.Message + " ", "funcG 4");
                 return 0;
             }
             finally
@@ -113,13 +108,13 @@ namespace login.Model
         }
 
         //retorna el campo de la tabla dependiendo de las condiciones
-        public string GetCampo(string tabla,string columna , string condiciones)
+        public string GetCampo(string tabla, string columna, string condiciones)
         {
-            query = "SELECT "+columna+" FROM " + tabla + " WHERE "+condiciones+" ";
+            query = "SELECT " + columna + " FROM " + tabla + " WHERE " + condiciones + " ";
             try
             {
                 con.Open();
-                command = new MySqlCommand(query, con); 
+                command = new MySqlCommand(query, con);
                 reader = command.ExecuteReader();
                 reader.Read();
                 string campo = reader.GetString(0);
@@ -127,7 +122,7 @@ namespace login.Model
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Hubo un error " + ex.Message + " ");
+                //MessageBox.Show("Hubo un error " + ex.Message + " ", "funcG 5");
                 return "";
             }
             finally
@@ -145,13 +140,13 @@ namespace login.Model
             {
                 con.Open();
                 command = new MySqlCommand(query, con);
-                command.ExecuteNonQuery(); 
+                command.ExecuteNonQuery();
                 con.Close();
                 return true;
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error en la base de datos: " + ex.Message + " ");
+                MessageBox.Show("Error en la base de datos: " + ex.Message + " ", "funcG 6");
                 con.Close();
                 return false;
             }

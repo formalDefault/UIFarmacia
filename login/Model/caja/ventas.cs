@@ -12,7 +12,22 @@ namespace login.Model.caja
         string date = DateTime.Now.ToString("yyyy/MM/dd");
         string time = DateTime.Now.ToString("hh:mm:ss");
         Model.funcGenerales funciones = new Model.funcGenerales();
-         
+        Conexion conexion = new Conexion();
+
+        static async Task<Boolean> Metodo(MySqlConnection conn, MySqlCommand cmd)
+        {
+            try
+            {
+                await cmd.ExecuteNonQueryAsync();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(" " + ex.Message + " ");
+                return false;
+            }
+        }
+
         //guarda el id de la venta en proceso
         public void setIdVenta()
         {
@@ -47,9 +62,9 @@ namespace login.Model.caja
                 command.Parameters.AddWithValue("@total", total);
                 command.ExecuteNonQuery();
                 con.Close();
-                regSalidas(total);
+                //regSalidas(total);
                 setIdVenta();
-                enlazarSalidasVentas();
+                //enlazarSalidasVentas();
                 return true;
             }
             catch (Exception ex)
@@ -60,33 +75,28 @@ namespace login.Model.caja
             }
         }
 
-        //registra la salidas de los productos
-        public Boolean regSalidas(float total)
+        //registra la salidas de los productos (funcion asincrona)
+        public async void regSalidas(int producto, int cantidad, float total)
         {
-            query = "INSERT INTO salidas (idProducto, cantidad, fecha, hora, total) VALUES ( @producto, 1, @date, @time, @total )";
+            query = "INSERT INTO salidas (idProducto, cantidad, fecha, hora, total) VALUES ( @producto, @cantidad, @date, @time, @total )";
 
             try
-            {   
-                foreach(var i in Model.caja.PilaProducts.seeStack())
-                {
-                    con.Open();
-                    command = new MySqlCommand(query, con);
-                    command.Parameters.AddWithValue("@time", time);
-                    command.Parameters.AddWithValue("@date", date);
-                    command.Parameters.AddWithValue("@total", total);
-                    command.Parameters.AddWithValue("@producto", i);
-                    command.ExecuteNonQuery();
-                    pushStackSalidas(GetIdSalidas("SELECT MAX(id) FROM salidas "));
-                    con.Close();
-                    //MessageBox.Show(" Salida: "+peekStackSalidas()+" , Producto:"+i); //quitar
-                }
-                return true;
+            {  
+                conexion.AbrirConexion();
+                command = new MySqlCommand(query, conexion.con);
+                command.Parameters.AddWithValue("@time", time);
+                command.Parameters.AddWithValue("@date", date);
+                command.Parameters.AddWithValue("@cantidad", cantidad);
+                command.Parameters.AddWithValue("@total", total);
+                command.Parameters.AddWithValue("@producto", producto); 
+                await Metodo(conexion.con, command); 
+                conexion.CerrarConexion();
+                pushStackSalidas(GetIdSalidas("SELECT MAX(id) FROM salidas ")); 
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error en la base de datos: "+ex.Message+" ", "vnts 03"); 
-                borrarVenta(IdVenta);
-                return false;
+                borrarVenta(IdVenta); 
             }
         } 
          
@@ -118,9 +128,7 @@ namespace login.Model.caja
                     command.ExecuteNonQuery();
                     con.Close();
                     popStackSalidas();
-                }
-                
-                
+                } 
                 return true;
             }
             catch (Exception ex)
@@ -157,13 +165,13 @@ namespace login.Model.caja
             //query = "SELECT MAX(id) FROM salidas ";
             try
             {
-                //con.Open();
+                con.Open();
                 command = new MySqlCommand(query, con);
                 reader = command.ExecuteReader();
                 reader.Read();
                 int id = Int16.Parse(reader.GetString(0));
                 reader.Close();
-                //con.Close();
+                con.Close();
                 return id;
             }
             catch (Exception ex)

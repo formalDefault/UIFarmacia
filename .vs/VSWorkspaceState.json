@@ -3,14 +3,14 @@
     "",
     "\\login",
     "\\login\\Model",
-    "\\login\\Model\\inventario",
+    "\\login\\Model\\caja",
     "\\login\\Vista",
     "\\login\\Vista\\Secciones",
     "\\login\\Vista\\Secciones\\SubSecciones",
-    "\\login\\Vista\\Secciones\\SubSecciones\\Caja",
     "\\login\\Vista\\Secciones\\SubSecciones\\Clientes",
-    "\\login\\Vista\\Secciones\\SubSecciones\\Inventario"
+    "\\login\\Vista\\Secciones\\SubSecciones\\Inventario",
+    "\\login\\Vista\\usuario"
   ],
-  "SelectedNode": "\\login\\Model\\caja\\ventas.cs",
+  "SelectedNode": "\\login\\Vista\\Secciones\\SubSecciones\\Caja\\Carrito.cs",
   "PreviewInSolutionExplorer": false
 }

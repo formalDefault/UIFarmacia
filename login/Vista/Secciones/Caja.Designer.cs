@@ -94,6 +94,7 @@
             this.subMenu_facturacion.TabIndex = 13;
             this.subMenu_facturacion.Text = "Facturacion";
             this.subMenu_facturacion.UseVisualStyleBackColor = false;
+            this.subMenu_facturacion.Click += new System.EventHandler(this.subMenu_facturacion_Click);
             // 
             // subMenu_gasto
             // 
