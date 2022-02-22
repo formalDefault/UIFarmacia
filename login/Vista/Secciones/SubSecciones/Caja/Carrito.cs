@@ -17,10 +17,7 @@ namespace login.Vista.Secciones.SubSecciones.Caja
         {
             get
             {
-                if (instancia == null)
-                {
-                    instancia = new Carrito();
-                } 
+                if (instancia == null) instancia = new Carrito(); 
                 return instancia;
             }
         } 
@@ -52,8 +49,7 @@ namespace login.Vista.Secciones.SubSecciones.Caja
         //Obtiene el id de la fila selecciona en la tabla
         public static string GetValorCelda(DataGridView dgv, int num)
         {
-            string valor = dgv.Rows[dgv.CurrentRow.Index].Cells[num].Value.ToString();
-
+            string valor = dgv.Rows[dgv.CurrentRow.Index].Cells[num].Value.ToString(); 
             return valor;
         }
 
@@ -62,7 +58,7 @@ namespace login.Vista.Secciones.SubSecciones.Caja
         {
             panelCliente.Visible = false;
         }
-
+        
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
             panelCliente.Visible = true;
@@ -91,7 +87,6 @@ namespace login.Vista.Secciones.SubSecciones.Caja
                     if (filaId == idProduct)
                     {
                         string cant = dataGridView2.Rows[iterador].Cells[0].Value.ToString();
-
                         float MultiplicacionCantidad = float.Parse(funciones.GetCampo("productos", "retail * " + cant + " ", "id = " + idProduct + " "));
                         costoTotal -= MultiplicacionCantidad;
                         labelTotal.Text = "$" + costoTotal + " MXN";
