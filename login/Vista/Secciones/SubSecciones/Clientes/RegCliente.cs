@@ -12,7 +12,7 @@ namespace login.Vista.Secciones.SubSecciones.Clientes
 {
     public partial class RegCliente : Form
     {
-        Model.clientes.clientes clientes = new Model.clientes.clientes();
+        Model.clientes.clientes clientes = new Model.clientes.clientes();  
 
         public RegCliente()
         {
@@ -29,6 +29,9 @@ namespace login.Vista.Secciones.SubSecciones.Clientes
             if (clientes.regCliente(textName.Text, textTel.Text, textDireccion.Text, textEmail.Text))
             {
                 MessageBox.Show("Cliente registrado correctamente");
+                Caja.Carrito.Instance.recargarCbClientes();
+                Caja.Carrito.Instance.NuevoCliente = textName.Text;
+                Caja.Carrito.Instance.setNuevoCliente();
                 this.Hide();
             }
         }

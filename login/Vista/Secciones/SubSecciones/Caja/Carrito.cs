@@ -9,6 +9,9 @@ namespace login.Vista.Secciones.SubSecciones.Caja
         static int idProduct = 0;
         float costoTotal = 0;
 
+        string nuevoCliente; 
+        public string NuevoCliente { get => nuevoCliente; set => nuevoCliente = value; }
+        public void setNuevoCliente() { comboBoxCliente.Text = NuevoCliente; }
 
         //patron singleton  
         private static Carrito instancia = null;
@@ -20,7 +23,7 @@ namespace login.Vista.Secciones.SubSecciones.Caja
                 if (instancia == null) instancia = new Carrito(); 
                 return instancia;
             }
-        } 
+        }
 
         protected Carrito()
         {
@@ -31,6 +34,7 @@ namespace login.Vista.Secciones.SubSecciones.Caja
             dataGridView2.AllowUserToResizeColumns = false;
             dataGridView1.AllowUserToResizeRows = false;
             dataGridView1.AllowUserToResizeColumns = false;
+            recargarCbClientes();
             if (ids.Equals(""))
             {
                 limpiar();
@@ -43,8 +47,20 @@ namespace login.Vista.Secciones.SubSecciones.Caja
 
             if (radioButton1.Checked) panelCliente.Visible = false;
         }
+        //Vista.Secciones.SubSecciones.Caja.Carrito.Instance (Manera para devolver o iniciar la esta clase desde otra) 
         //fin del patron singleton
 
+        //funcion para los atajos de teclado (se inicia al cargar el panel 3)
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+            txtCodigo.Focus();
+        }
+
+        public void recargarCbClientes()
+        {
+            comboBoxCliente.Items.Clear();
+            funciones.comboBox(comboBoxCliente, "SELECT nombre FROM clientes", "nombre");
+        }
 
         //Obtiene el id de la fila selecciona en la tabla
         public static string GetValorCelda(DataGridView dgv, int num)
@@ -118,26 +134,57 @@ namespace login.Vista.Secciones.SubSecciones.Caja
             labelTotal.Text = "$0.00";
             dataGridView2.Rows.Clear();
             cobrar_btn.Visible = false;
+            comboBoxCliente.Text = "";
+            radioButton1.Checked = true;
             costoTotal = 0;
         }
 
         //proceso para cobrar (registra la venta, las salidas y despues las enlaza)
         private void cobrar_btn_Click(object sender, EventArgs e)
         {
-            if (ventas.RegVenta(costoTotal))
+            if (radioButton1.Checked)
             {
-                int i = 0;
-                foreach (var id in Model.caja.PilaProducts.seeStack())
+                if (ventas.RegVenta(costoTotal))
                 {
-                    int cantidad = Int16.Parse(dataGridView2.Rows[i].Cells[0].Value.ToString());
-                    int idProducto = Int16.Parse(dataGridView2.Rows[i].Cells[1].Value.ToString());
-                    ventas.regSalidas(idProducto, cantidad, float.Parse(funciones.GetCampo("productos", "retail * " + cantidad + " as total ", "id = " + idProducto + "")));
-                    ++i;
+                    int i = 0;
+                    foreach (var id in Model.caja.PilaProducts.seeStack())
+                    {
+                        int cantidad = Int16.Parse(dataGridView2.Rows[i].Cells[0].Value.ToString());
+                        int idProducto = Int16.Parse(dataGridView2.Rows[i].Cells[1].Value.ToString());
+                        ventas.regSalidas(idProducto, cantidad, float.Parse(funciones.GetCampo("productos", "retail * " + cantidad + " as total ", "id = " + idProducto + "")));
+                        ++i;
+                    }
+                    ventas.enlazarSalidasVentas();
+                    limpiar();
+                    MessageBox.Show("Venta finalizada con exito");
                 }
-                ventas.enlazarSalidasVentas();
-                limpiar();
-                MessageBox.Show("Venta finalizada con exito");
             }
+            else
+            { 
+                if(comboBoxCliente.Text != "")
+                {
+                    if (ventas.RegVenta(funciones.GetId("clientes", "nombre = '" + comboBoxCliente.Text + "'"), costoTotal))
+                    {
+                        int i = 0;
+                        foreach (var id in Model.caja.PilaProducts.seeStack())
+                        {
+                            int cantidad = Int16.Parse(dataGridView2.Rows[i].Cells[0].Value.ToString());
+                            int idProducto = Int16.Parse(dataGridView2.Rows[i].Cells[1].Value.ToString());
+                            ventas.regSalidas(idProducto, cantidad, float.Parse(funciones.GetCampo("productos", "retail * " + cantidad + " as total ", "id = " + idProducto + "")));
+                            ++i;
+                        }
+                        ventas.enlazarSalidasVentas();
+                        limpiar();
+                        MessageBox.Show("Venta finalizada con exito");
+                    } 
+                }
+                else
+                {
+                    MessageBox.Show("No se a seleccionado ningun cliente");
+                }
+                
+            }
+            
         }
 
         //cancelar compra
@@ -225,6 +272,10 @@ namespace login.Vista.Secciones.SubSecciones.Caja
         //agregar un producto al presionar enter
         private void txtCodigo_KeyPress(object sender, KeyPressEventArgs e)
         {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
             if (e.KeyChar == Convert.ToChar(Keys.Enter))
             {
                 if(txtCodigo.Text != "")
@@ -248,6 +299,11 @@ namespace login.Vista.Secciones.SubSecciones.Caja
         private void button2_Click(object sender, EventArgs e)
         {
 
+        }
+         
+        private void comboBoxCliente_Click(object sender, EventArgs e)
+        {
+            comboBoxCliente.DroppedDown = true;
         }
     }
 }

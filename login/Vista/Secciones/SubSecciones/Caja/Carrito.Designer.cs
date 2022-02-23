@@ -40,11 +40,11 @@
             this.labelTotal = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panelCliente = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.comboBoxCliente = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
@@ -56,12 +56,15 @@
             this.quitarProducto_Btn = new System.Windows.Forms.Button();
             this.cancelar_btn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.txtCodigo = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panelCliente.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -127,16 +130,37 @@
             // 
             this.panelCliente.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelCliente.BackgroundImage")));
             this.panelCliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panelCliente.Controls.Add(this.panel5);
+            this.panelCliente.Controls.Add(this.comboBoxCliente);
             this.panelCliente.Controls.Add(this.label5);
             this.panelCliente.Controls.Add(this.label6);
             this.panelCliente.Controls.Add(this.label4);
-            this.panelCliente.Controls.Add(this.panel4);
-            this.panelCliente.Controls.Add(this.textBox1);
             this.panelCliente.Controls.Add(this.label3);
             this.panelCliente.Location = new System.Drawing.Point(740, 291);
             this.panelCliente.Name = "panelCliente";
             this.panelCliente.Size = new System.Drawing.Size(441, 323);
             this.panelCliente.TabIndex = 1;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.MidnightBlue;
+            this.panel5.Location = new System.Drawing.Point(76, 187);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(282, 3);
+            this.panel5.TabIndex = 12;
+            // 
+            // comboBoxCliente
+            // 
+            this.comboBoxCliente.BackColor = System.Drawing.Color.White;
+            this.comboBoxCliente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboBoxCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxCliente.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.comboBoxCliente.FormattingEnabled = true;
+            this.comboBoxCliente.Location = new System.Drawing.Point(76, 162);
+            this.comboBoxCliente.Name = "comboBoxCliente";
+            this.comboBoxCliente.Size = new System.Drawing.Size(282, 25);
+            this.comboBoxCliente.TabIndex = 11;
+            this.comboBoxCliente.Click += new System.EventHandler(this.comboBoxCliente_Click);
             // 
             // label5
             // 
@@ -145,7 +169,7 @@
             this.label5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label5.Location = new System.Drawing.Point(211, 185);
+            this.label5.Location = new System.Drawing.Point(211, 206);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(156, 16);
             this.label5.TabIndex = 10;
@@ -158,7 +182,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label6.Location = new System.Drawing.Point(66, 185);
+            this.label6.Location = new System.Drawing.Point(66, 206);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(148, 16);
             this.label6.TabIndex = 9;
@@ -173,22 +197,6 @@
             this.label4.Size = new System.Drawing.Size(174, 22);
             this.label4.TabIndex = 7;
             this.label4.Text = "Nombre del cliente:";
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(36)))), ((int)(((byte)(67)))));
-            this.panel4.Location = new System.Drawing.Point(76, 166);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(282, 2);
-            this.panel4.TabIndex = 6;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Location = new System.Drawing.Point(76, 146);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(282, 16);
-            this.textBox1.TabIndex = 5;
             // 
             // label3
             // 
@@ -211,6 +219,7 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(524, 521);
             this.panel3.TabIndex = 2;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // dataGridView2
             // 
@@ -366,21 +375,40 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.MidnightBlue;
-            this.panel2.Location = new System.Drawing.Point(237, 72);
+            this.panel2.Controls.Add(this.panel4);
+            this.panel2.Location = new System.Drawing.Point(237, 65);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(386, 3);
             this.panel2.TabIndex = 6;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.MidnightBlue;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(386, 3);
+            this.panel4.TabIndex = 7;
             // 
             // txtCodigo
             // 
             this.txtCodigo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCodigo.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtCodigo.Location = new System.Drawing.Point(237, 54);
+            this.txtCodigo.Location = new System.Drawing.Point(237, 47);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(386, 18);
             this.txtCodigo.TabIndex = 7;
             this.txtCodigo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtCodigo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCodigo_KeyPress);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(360, 68);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(138, 17);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Codigo del producto";
             // 
             // Carrito
             // 
@@ -388,6 +416,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1428, 690);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.cancelar_btn);
@@ -407,6 +436,7 @@
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -424,8 +454,6 @@
         private Label label5;
         private Label label6;
         private Label label4;
-        private Panel panel4;
-        private TextBox textBox1;
         private Label label3;
         private Button cobrar_btn;
         private Button quitarProducto_Btn;
@@ -437,5 +465,9 @@
         private DataGridView dataGridView2;
         private DataGridViewTextBoxColumn cantidad;
         private DataGridViewTextBoxColumn id;
+        private Label label2;
+        private ComboBox comboBoxCliente;
+        private Panel panel5;
+        private Panel panel4;
     }
 }

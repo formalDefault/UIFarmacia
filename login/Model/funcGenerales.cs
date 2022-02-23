@@ -48,6 +48,7 @@ namespace login.Model
                     cb.Items.Add(String.Format("{0}", reader["" + columnName + ""]));
                 }
                 con.Close();
+                reader.Close();
                 return true;
             }
             catch (Exception ex)
@@ -59,14 +60,15 @@ namespace login.Model
         }
 
         //retorna el id del campo de la tabla 
-        public int GetId(string tabla, string name)
+        public int GetId(string tabla, string condicion)
         {
-            query = "SELECT id FROM " + tabla + " WHERE nombre = @name";
+            query = "SELECT id FROM " + tabla + " WHERE " + condicion+" ";
             try
             {
                 con.Open();
                 command = new MySqlCommand(query, con);
-                command.Parameters.AddWithValue("@name", name);
+                //command.Parameters.AddWithValue("@condicion", condicion);
+                //command.Parameters.AddWithValue("@tabla", tabla);
                 reader = command.ExecuteReader();
                 reader.Read();
                 int id = reader.GetInt16(0);
@@ -79,6 +81,7 @@ namespace login.Model
             }
             finally
             {
+                reader.Close();
                 con.Close();
             }
         }

@@ -39,7 +39,7 @@ namespace login.Vista.Secciones.SubSecciones.Inventario
             } 
             else
             { 
-                if (inventario.registrarCompra(funciones.GetId("proveedores", textProveedor.Text), textTotal.Text, textDescripcion.Text))
+                if (inventario.registrarCompra(funciones.GetId("proveedores", "nombre = '"+ textProveedor.Text+"'"), textTotal.Text, textDescripcion.Text))
                 {
                     EntradaProducto entradaProducto = new EntradaProducto();
                     entradaProducto.Show();

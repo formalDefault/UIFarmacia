@@ -49,15 +49,16 @@ namespace login.Model.caja
             }
         }
 
-        //registra la venta
-        public Boolean RegVenta(float total)
+        //registra Ventas por mayoreo
+        public Boolean RegVenta(int cliente , float total)
         {
-            query = "INSERT INTO ventas (idCliente, fecha, hora, total, estado) VALUES (6, @date, @time, @total, 'completado') ";
+            query = "INSERT INTO ventas (idCliente, fecha, hora, total, estado) VALUES (@cliente, @date, @time, @total, 'completado') ";
             try
             {
                 con.Open();
                 command = new MySqlCommand(query, con);
                 command.Parameters.AddWithValue("@date", date);
+                command.Parameters.AddWithValue("@cliente", cliente);
                 command.Parameters.AddWithValue("@time", time);
                 command.Parameters.AddWithValue("@total", total);
                 command.ExecuteNonQuery();
@@ -75,8 +76,34 @@ namespace login.Model.caja
             }
         }
 
+        //registra Ventas por mayoreo
+        public Boolean RegVenta(float total)
+        {
+            query = "INSERT INTO ventas (fecha, hora, total, estado) VALUES (@date, @time, @total, 'completado') ";
+            try
+            {
+                con.Open();
+                command = new MySqlCommand(query, con);
+                command.Parameters.AddWithValue("@date", date);
+                command.Parameters.AddWithValue("@time", time);
+                command.Parameters.AddWithValue("@total", total);
+                command.ExecuteNonQuery();
+                con.Close();
+                //regSalidas(total);
+                setIdVenta();
+                //enlazarSalidasVentas();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                con.Close();
+                MessageBox.Show("Hubo un error en la base de datos: " + ex.Message + " ", "vnts 2.1");
+                return false;
+            }
+        }
+
         //registra la salidas de los productos (funcion asincrona)
-        public async void regSalidas(int producto, int cantidad, float total)
+        public async void regSalidas(int producto, float cantidad, float total)
         {
             query = "INSERT INTO salidas (idProducto, cantidad, fecha, hora, total) VALUES ( @producto, @cantidad, @date, @time, @total )";
 
