@@ -27,7 +27,7 @@ namespace login.Model
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Hubo un error en la base de datos: " + ex.Message + " ", "funcG 1");
+                MessageBox.Show("Hubo un error en la base de datos: " + ex.Message + " ", "funciones generales 1");
                 con.Close();
             }
             return dt;
@@ -53,7 +53,7 @@ namespace login.Model
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error en la base de datos: "+ ex.Message+" ", "funcG 2");
+                MessageBox.Show("Error en la base de datos: "+ ex.Message+" ", "funciones generales 2");
                 con.Close();
                 return false;
             }
@@ -69,6 +69,7 @@ namespace login.Model
                 command = new MySqlCommand(query, con);
                 //command.Parameters.AddWithValue("@condicion", condicion);
                 //command.Parameters.AddWithValue("@tabla", tabla);
+
                 reader = command.ExecuteReader();
                 reader.Read();
                 int id = reader.GetInt16(0);
@@ -76,7 +77,7 @@ namespace login.Model
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Hubo un error: " + ex.Message + " ", "funcG 3");
+                MessageBox.Show("Hubo un error: " + ex.Message + " ", "funciones generales 3");
                 return 0;
             }
             finally
@@ -101,7 +102,7 @@ namespace login.Model
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Hubo un error: " + ex.Message + " ", "funcG 4");
+                MessageBox.Show("Hubo un error: " + ex.Message + " ", "funciones generales 4");
                 return 0;
             }
             finally
@@ -125,7 +126,7 @@ namespace login.Model
             }
             catch (Exception ex)
             {
-                //MessageBox.Show("Hubo un error " + ex.Message + " ", "funcG 5");
+                //MessageBox.Show("Hubo un error " + ex.Message + " ", "funcG 5"); //quitar 
                 return "";
             }
             finally
@@ -149,7 +150,7 @@ namespace login.Model
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error en la base de datos: " + ex.Message + " ", "funcG 6");
+                MessageBox.Show("Error en la base de datos: " + ex.Message + " ", "funciones generales 6");
                 con.Close();
                 return false;
             }

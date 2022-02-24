@@ -50,3 +50,4 @@ C:\Users\HP\Source\Repos\formalDefault\UIFarmacia\login\obj\Debug\net6.0-windows
 C:\Users\HP\Source\Repos\formalDefault\UIFarmacia\login\obj\Debug\net6.0-windows\login.pdb
 C:\Users\HP\Source\Repos\formalDefault\UIFarmacia\login\obj\Debug\net6.0-windows\login.genruntimeconfig.cache
 C:\Users\HP\Source\Repos\formalDefault\UIFarmacia\login\obj\Debug\net6.0-windows\login.csproj.AssemblyReference.cache
+C:\Users\HP\Source\Repos\formalDefault\UIFarmacia\login\obj\Debug\net6.0-windows\login.Vista.Secciones.SubSecciones.Clientes.detalleClientes.resources

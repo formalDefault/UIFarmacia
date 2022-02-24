@@ -31,6 +31,9 @@
     <Compile Update="Vista\Secciones\SubSecciones\Clientes\Clientes.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Vista\Secciones\SubSecciones\Clientes\detalleClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Vista\Secciones\SubSecciones\Clientes\RegCliente.cs">
       <SubType>Form</SubType>
     </Compile>

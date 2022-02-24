@@ -15,7 +15,7 @@ namespace login.Vista.secciones
         public Clientes()
         {
             InitializeComponent();
-            mostrarContenido(new Vista.Secciones.SubSecciones.Clientes.Clientes());
+            mostrarContenido(Vista.Secciones.SubSecciones.Clientes.Clientes.Instance);
             subMenu_clientes.ForeColor = Color.Black;
             subMenu_clientes.BackColor = Color.White;
         }
@@ -42,7 +42,7 @@ namespace login.Vista.secciones
         private void subMenu_clientes_Click(object sender, EventArgs e)
         {
             colors();
-            mostrarContenido(new Vista.Secciones.SubSecciones.Clientes.Clientes());
+            mostrarContenido(Vista.Secciones.SubSecciones.Clientes.Clientes.Instance);
             subMenu_clientes.ForeColor = Color.Black;
             subMenu_clientes.BackColor = Color.White;
         }

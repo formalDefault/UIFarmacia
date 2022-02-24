@@ -12,6 +12,6 @@
     "\\login\\Vista\\Secciones\\SubSecciones\\Inventario",
     "\\login\\Vista\\usuario"
   ],
-  "SelectedNode": "\\login\\Vista\\Secciones\\Caja.cs",
+  "SelectedNode": "\\login\\Vista\\Secciones\\SubSecciones\\Inventario\\Stock.cs",
   "PreviewInSolutionExplorer": false
 }

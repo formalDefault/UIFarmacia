@@ -3,9 +3,20 @@
     public partial class Terminal : Form
     {
         Model.funcGenerales funciones = new Model.funcGenerales(); 
-        static int idProducto = 0; 
+        static int idProducto = 0;
+        
+        private static Terminal instancia = null;
 
-        public Terminal()
+        public static Terminal Instance
+        {
+            get
+            {
+                if (instancia == null) instancia = new Terminal();
+                return instancia;
+            }
+        }
+
+        protected Terminal()
         {
             InitializeComponent();
             dataGridView1.DataSource = funciones.TablaDatos("SELECT * FROM productos"); 

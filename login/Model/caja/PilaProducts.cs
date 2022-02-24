@@ -48,11 +48,7 @@ namespace login.Model.caja
                     lista.Add(actual.StackIdProduct);
                     actual = actual.siguiente;
                 }
-            }
-            //else
-            //{
-            //    MessageBox.Show("La pila esta vacia");
-            //}
+            } 
             return lista;
         }
 
@@ -77,8 +73,7 @@ namespace login.Model.caja
                         else
                         {
                             anterior.siguiente = actual.siguiente;
-                        }
-                        //MessageBox.Show("Producto eliminado del carrito"); //quitar
+                        } 
                         encontrado = true;
                     }
                     anterior = actual;

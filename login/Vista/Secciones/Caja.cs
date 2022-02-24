@@ -17,14 +17,14 @@ namespace login.Vista.Secciones
             InitializeComponent();
             subMenu_terminal.BackColor = Color.White;
             subMenu_terminal.ForeColor = Color.Black;
-            mostrarContenido(new SubSecciones.Caja.Terminal());
+            mostrarContenido(SubSecciones.Caja.Terminal.Instance);
         }
 
         //Pintar colores dinamicamente al hacer click en los 
         public void colors()
         {
             //Hacer botones transparentes
-            subMenu_arqueo.BackColor = Color.Transparent; 
+            //subMenu_arqueo.BackColor = Color.Transparent; 
             subMenu_corte.BackColor = Color.Transparent; 
             subMenu_facturacion.BackColor = Color.Transparent; 
             subMenu_gasto.BackColor = Color.Transparent; 
@@ -33,7 +33,7 @@ namespace login.Vista.Secciones
             subMenu_carrito.BackColor = Color.Transparent;
            
             //pintar color de las letras
-            subMenu_arqueo.ForeColor = Color.White; 
+            //subMenu_arqueo.ForeColor = Color.White; 
             subMenu_corte.ForeColor = Color.White; 
             subMenu_facturacion.ForeColor = Color.White; 
             subMenu_gasto.ForeColor = Color.White; 
@@ -61,7 +61,7 @@ namespace login.Vista.Secciones
             subMenu_terminal.BackColor = Color.White;
             subMenu_terminal.ForeColor = Color.Black;
 
-            mostrarContenido(new SubSecciones.Caja.Terminal()); 
+            mostrarContenido(SubSecciones.Caja.Terminal.Instance); 
         }
 
         private void subMenu_corte_Click(object sender, EventArgs e)

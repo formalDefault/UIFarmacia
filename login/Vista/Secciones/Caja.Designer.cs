@@ -33,7 +33,6 @@
             this.subMenu_facturacion = new System.Windows.Forms.Button();
             this.subMenu_gasto = new System.Windows.Forms.Button();
             this.subMenu_presupuesto = new System.Windows.Forms.Button();
-            this.subMenu_arqueo = new System.Windows.Forms.Button();
             this.subMenu_corte = new System.Windows.Forms.Button();
             this.subMenu_terminal = new System.Windows.Forms.Button();
             this.panelContainer = new System.Windows.Forms.Panel();
@@ -47,7 +46,6 @@
             this.panel1.Controls.Add(this.subMenu_facturacion);
             this.panel1.Controls.Add(this.subMenu_gasto);
             this.panel1.Controls.Add(this.subMenu_presupuesto);
-            this.panel1.Controls.Add(this.subMenu_arqueo);
             this.panel1.Controls.Add(this.subMenu_corte);
             this.panel1.Controls.Add(this.subMenu_terminal);
             this.panel1.ForeColor = System.Drawing.Color.White;
@@ -88,7 +86,7 @@
             this.subMenu_facturacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.subMenu_facturacion.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.subMenu_facturacion.ForeColor = System.Drawing.Color.White;
-            this.subMenu_facturacion.Location = new System.Drawing.Point(646, 0);
+            this.subMenu_facturacion.Location = new System.Drawing.Point(574, 0);
             this.subMenu_facturacion.Name = "subMenu_facturacion";
             this.subMenu_facturacion.Size = new System.Drawing.Size(132, 38);
             this.subMenu_facturacion.TabIndex = 13;
@@ -108,7 +106,7 @@
             this.subMenu_gasto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.subMenu_gasto.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.subMenu_gasto.ForeColor = System.Drawing.Color.White;
-            this.subMenu_gasto.Location = new System.Drawing.Point(518, 0);
+            this.subMenu_gasto.Location = new System.Drawing.Point(446, 0);
             this.subMenu_gasto.Name = "subMenu_gasto";
             this.subMenu_gasto.Size = new System.Drawing.Size(132, 38);
             this.subMenu_gasto.TabIndex = 12;
@@ -127,31 +125,12 @@
             this.subMenu_presupuesto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.subMenu_presupuesto.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.subMenu_presupuesto.ForeColor = System.Drawing.Color.White;
-            this.subMenu_presupuesto.Location = new System.Drawing.Point(383, 0);
+            this.subMenu_presupuesto.Location = new System.Drawing.Point(311, 0);
             this.subMenu_presupuesto.Name = "subMenu_presupuesto";
             this.subMenu_presupuesto.Size = new System.Drawing.Size(135, 38);
             this.subMenu_presupuesto.TabIndex = 11;
             this.subMenu_presupuesto.Text = "Presupuestos";
             this.subMenu_presupuesto.UseVisualStyleBackColor = false;
-            // 
-            // subMenu_arqueo
-            // 
-            this.subMenu_arqueo.BackColor = System.Drawing.Color.Transparent;
-            this.subMenu_arqueo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.subMenu_arqueo.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(36)))), ((int)(((byte)(67)))));
-            this.subMenu_arqueo.FlatAppearance.BorderSize = 0;
-            this.subMenu_arqueo.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.subMenu_arqueo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
-            this.subMenu_arqueo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
-            this.subMenu_arqueo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.subMenu_arqueo.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.subMenu_arqueo.ForeColor = System.Drawing.Color.White;
-            this.subMenu_arqueo.Location = new System.Drawing.Point(254, 0);
-            this.subMenu_arqueo.Name = "subMenu_arqueo";
-            this.subMenu_arqueo.Size = new System.Drawing.Size(132, 38);
-            this.subMenu_arqueo.TabIndex = 10;
-            this.subMenu_arqueo.Text = "Arqueo de caja";
-            this.subMenu_arqueo.UseVisualStyleBackColor = false;
             // 
             // subMenu_corte
             // 
@@ -167,9 +146,9 @@
             this.subMenu_corte.ForeColor = System.Drawing.Color.White;
             this.subMenu_corte.Location = new System.Drawing.Point(126, 0);
             this.subMenu_corte.Name = "subMenu_corte";
-            this.subMenu_corte.Size = new System.Drawing.Size(132, 38);
+            this.subMenu_corte.Size = new System.Drawing.Size(179, 38);
             this.subMenu_corte.TabIndex = 9;
-            this.subMenu_corte.Text = "Corte de caja";
+            this.subMenu_corte.Text = "Corte y arqueo de caja";
             this.subMenu_corte.UseVisualStyleBackColor = false;
             this.subMenu_corte.Click += new System.EventHandler(this.subMenu_corte_Click);
             // 
@@ -221,7 +200,6 @@
         private Button subMenu_facturacion;
         private Button subMenu_gasto;
         private Button subMenu_presupuesto;
-        private Button subMenu_arqueo;
         private Button subMenu_corte;
         private Button subMenu_terminal;
         private Panel panelContainer;

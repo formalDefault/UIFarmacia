@@ -47,6 +47,27 @@ namespace login.Model
             }
         }//Comprobar el formato del email
 
+        public bool FormatoEmail(string email)
+        {
+            String sFormato;
+            sFormato = "\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*";
+            if (Regex.IsMatch(email, sFormato))
+            {
+                if (Regex.Replace(email, sFormato, String.Empty).Length == 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                return false;
+            }
+        }//Comprobar el formato del email
+
         public bool Login(String User, String Pass) 
         {
             try

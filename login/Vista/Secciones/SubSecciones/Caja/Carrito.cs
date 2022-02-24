@@ -8,11 +8,7 @@ namespace login.Vista.Secciones.SubSecciones.Caja
         Model.caja.ventas ventas = new Model.caja.ventas();
         static int idProduct = 0;
         float costoTotal = 0;
-
-        string nuevoCliente; 
-        public string NuevoCliente { get => nuevoCliente; set => nuevoCliente = value; }
-        public void setNuevoCliente() { comboBoxCliente.Text = NuevoCliente; }
-
+          
         //patron singleton  
         private static Carrito instancia = null;
 
@@ -33,7 +29,7 @@ namespace login.Vista.Secciones.SubSecciones.Caja
             dataGridView2.AllowUserToResizeRows = false;
             dataGridView2.AllowUserToResizeColumns = false;
             dataGridView1.AllowUserToResizeRows = false;
-            dataGridView1.AllowUserToResizeColumns = false;
+            dataGridView1.AllowUserToResizeColumns = false; 
             recargarCbClientes();
             if (ids.Equals(""))
             {
@@ -50,7 +46,7 @@ namespace login.Vista.Secciones.SubSecciones.Caja
         //Vista.Secciones.SubSecciones.Caja.Carrito.Instance (Manera para devolver o iniciar la esta clase desde otra) 
         //fin del patron singleton
 
-        //funcion para los atajos de teclado (se inicia al cargar el panel 3)
+        //funcion para los atajos de teclado 
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
             txtCodigo.Focus();
@@ -84,7 +80,7 @@ namespace login.Vista.Secciones.SubSecciones.Caja
         private void quitarProducto_Btn_Click(object sender, EventArgs e)
         {
             Model.caja.PilaProducts.popStack(idProduct);
-            string ids = string.Join(", ", Model.caja.PilaProducts.seeStack());
+            string ids = string.Join(", ", Model.caja.PilaProducts.seeStack()); 
             if (ids.Equals(""))
             {
                 limpiar();
@@ -134,6 +130,8 @@ namespace login.Vista.Secciones.SubSecciones.Caja
             labelTotal.Text = "$0.00";
             dataGridView2.Rows.Clear();
             cobrar_btn.Visible = false;
+            quitarProducto_Btn.Visible = false;
+            cancelar_btn.Visible = false;
             comboBoxCliente.Text = "";
             radioButton1.Checked = true;
             costoTotal = 0;
@@ -190,7 +188,8 @@ namespace login.Vista.Secciones.SubSecciones.Caja
         //cancelar compra
         private void cancelar_btn_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Esta seguro de cancelar la compra?", "Cancelar compra", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            //if (MessageBox.Show("Esta seguro de cancelar la compra?", "Cancelar compra", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if(MessageBox.Show("¿Esta seguro de cancelar la venta?", "Cancelar venta actual", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
                 limpiar();
             }
@@ -216,7 +215,7 @@ namespace login.Vista.Secciones.SubSecciones.Caja
         private void agregarProducto()
         {
             int idIngresado = 0; 
-            if(funciones.GetCampo("productos", "id", "codigo = " + int.Parse(txtCodigo.Text) + " ") != "")
+            if(funciones.GetCampo("productos", "id", "codigo = " + Int64.Parse(txtCodigo.Text) + " ") != "")
             {
                 idIngresado = Int32.Parse(funciones.GetCampo("productos", "id", "codigo = " + int.Parse(txtCodigo.Text) + " "));
 
@@ -233,9 +232,14 @@ namespace login.Vista.Secciones.SubSecciones.Caja
                     labelTotal.Text = "$" + costoTotal + " MXN";
 
                     dataGridView2.Rows.Add("1", idIngresado);
+
+                    //Ordena los datos mostrados en la tabla de menor a mayor //quitar comentario
                     dataGridView2.Sort(this.dataGridView2.Columns["id"], ListSortDirection.Ascending);
 
                     dataGridView2.Visible = true;
+
+                    quitarProducto_Btn.Visible = true;
+                    cancelar_btn.Visible = true; 
                 }
                 else
                 {

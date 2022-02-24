@@ -128,9 +128,11 @@
             this.textTel.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textTel.ForeColor = System.Drawing.Color.White;
             this.textTel.Location = new System.Drawing.Point(36, 195);
+            this.textTel.MaxLength = 14;
             this.textTel.Name = "textTel";
             this.textTel.Size = new System.Drawing.Size(299, 16);
             this.textTel.TabIndex = 43;
+            this.textTel.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textTel_KeyPress);
             // 
             // textDireccion
             // 
