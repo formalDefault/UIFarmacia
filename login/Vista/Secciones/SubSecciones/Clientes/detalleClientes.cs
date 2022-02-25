@@ -1,20 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace login.Vista.Secciones.SubSecciones.Clientes
+﻿namespace login.Vista.Secciones.SubSecciones.Clientes
 {
     public partial class detalleClientes : Form
     {
-        public detalleClientes()
+        public detalleClientes(/*string name, string tel, string direcc, string date*/)
         {
             InitializeComponent();
+            //txtName.Text = name;
+            //txtTelefono.Text = tel;
+            //lblDireccion.Text = direcc;
+            //txtDate.Text = date;
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }

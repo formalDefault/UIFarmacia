@@ -196,9 +196,39 @@ namespace login.Model.inventario
         }
          
 
+        public List<string> detalles(int id)
+        {
 
-        //MODELO DE DATOS ENTRADAS
-        
+            List<string> lista = new List<string>();
+            try
+            {
+                con.Open(); 
+                MySqlCommand query = new MySqlCommand("SELECT codigo, nombre, categoria, retail, mayoreo FROM productos WHERE id = @id", con);
+                query.Parameters.AddWithValue("@id", id); 
+                MySqlDataReader reader = query.ExecuteReader(); 
+
+                if(reader.Read())
+                { 
+                    Vista.Variables var = new Vista.Variables();
+                    lista.Add(String.Format("{0}", reader[0])); 
+                    lista.Add(String.Format("{0}", reader[1])); 
+                    lista.Add(String.Format("{0}", reader[2])); 
+                    lista.Add(String.Format("{0}", reader[3])); 
+                    lista.Add(String.Format("{0}", reader[4])); 
+                }
+                else
+                {
+                    MessageBox.Show("Producto no encontrado");
+                }
+                con.Close(); 
+                return lista;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hubo un error de parte de la base de datos");
+                return lista;
+            }
+        }
 
     }
 }

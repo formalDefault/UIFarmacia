@@ -24,7 +24,7 @@ namespace login.Vista.Secciones.SubSecciones.Clientes
                 if (instancia == null) instancia = new Clientes();
                 return instancia;
             }
-        }
+        }   
 
         protected Clientes()
         {      
@@ -36,6 +36,12 @@ namespace login.Vista.Secciones.SubSecciones.Clientes
         //fin Singleton
 
         public void refreshTable () { dataGridView1.DataSource = funciones.TablaDatos("SELECT nombre as Cliente, direccion as Direccion, email as Correo FROM clientes"); }
+        
+        private void cancelar_btn_Click(object sender, EventArgs e)
+        {
+            detalleClientes details = new detalleClientes();
+            details.Show();
+        } 
     }
 }
   

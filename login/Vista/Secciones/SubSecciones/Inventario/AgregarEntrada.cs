@@ -18,7 +18,7 @@ namespace login.Vista.Secciones.SubSecciones.Inventario
         public AgregarEntrada()
         {
             InitializeComponent();
-            funciones.comboBox(textProveedor, "SELECT nombre FROM proveedores", "nombre");
+            funciones.comboBox(comboBox1, "SELECT nombre FROM proveedores", "nombre");
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -33,19 +33,39 @@ namespace login.Vista.Secciones.SubSecciones.Inventario
 
         private void button1_Click(object sender, EventArgs e)
         { 
-            if(textTotal.Text == "" || textProveedor.Text == "")
+            if(textTotal.Text == "" || comboBox1.Text == "")
             {
                 MessageBox.Show("Faltan campos por llenar");
             } 
             else
-            { 
-                if (inventario.registrarCompra(funciones.GetId("proveedores", "nombre = '"+ textProveedor.Text+"'"), textTotal.Text, textDescripcion.Text))
+            {
+                if (inventario.registrarCompra(funciones.GetId("proveedores", "nombre = '"+ comboBox1.Text +"' "), textTotal.Text, textDescripcion.Text))
                 {
                     EntradaProducto entradaProducto = new EntradaProducto();
                     entradaProducto.Show();
                     this.Hide();
                 }
             }
+        }
+
+        private void textTotal_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+                (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void comboBox1_Click(object sender, EventArgs e)
+        {
+            comboBox1.DroppedDown = true;
         }
     }
 }

@@ -16,7 +16,7 @@ namespace login.Vista.Secciones
         public Inventario()
         {
             InitializeComponent(); 
-            mostrarContenido(new SubSecciones.Inventario.stock()); 
+            mostrarContenido(SubSecciones.Inventario.stock.Instance); 
             subMenu_inventario.ForeColor = Color.Black;
             subMenu_inventario.BackColor = Color.White;
 
@@ -52,7 +52,7 @@ namespace login.Vista.Secciones
         private void subMenu_inventario_Click(object sender, EventArgs e)
         {
             colors();  
-            mostrarContenido(new SubSecciones.Inventario.stock());
+            mostrarContenido(SubSecciones.Inventario.stock.Instance);
             subMenu_inventario.ForeColor = Color.Black;
             subMenu_inventario.BackColor = Color.White;
 
@@ -78,7 +78,7 @@ namespace login.Vista.Secciones
 
         private void reloadBtn_Click(object sender, EventArgs e)
         {
-            mostrarContenido(new SubSecciones.Inventario.stock());
+            mostrarContenido(SubSecciones.Inventario.stock.Instance);
         }
 
         private void subMenu_detalles_Click(object sender, EventArgs e)

@@ -9,6 +9,7 @@ C:\Users\HP\Source\Repos\formalDefault\UIFarmacia\login\obj\Debug\net6.0-windows
 C:\Users\HP\Source\Repos\formalDefault\UIFarmacia\login\obj\Debug\net6.0-windows\login.Vista.Secciones.SubSecciones.Caja.Corte.resources
 C:\Users\HP\Source\Repos\formalDefault\UIFarmacia\login\obj\Debug\net6.0-windows\login.Vista.Secciones.SubSecciones.Caja.Terminal.resources
 C:\Users\HP\Source\Repos\formalDefault\UIFarmacia\login\obj\Debug\net6.0-windows\login.Vista.Secciones.SubSecciones.Clientes.Clientes.resources
+C:\Users\HP\Source\Repos\formalDefault\UIFarmacia\login\obj\Debug\net6.0-windows\login.Vista.Secciones.SubSecciones.Clientes.detalleClientes.resources
 C:\Users\HP\Source\Repos\formalDefault\UIFarmacia\login\obj\Debug\net6.0-windows\login.Vista.Secciones.SubSecciones.Clientes.RegCliente.resources
 C:\Users\HP\Source\Repos\formalDefault\UIFarmacia\login\obj\Debug\net6.0-windows\login.Vista.Secciones.SubSecciones.Inventario.AgregarEntrada.resources
 C:\Users\HP\Source\Repos\formalDefault\UIFarmacia\login\obj\Debug\net6.0-windows\login.Vista.Secciones.SubSecciones.Inventario.Detalles.resources
@@ -50,4 +51,4 @@ C:\Users\HP\Source\Repos\formalDefault\UIFarmacia\login\obj\Debug\net6.0-windows
 C:\Users\HP\Source\Repos\formalDefault\UIFarmacia\login\obj\Debug\net6.0-windows\login.pdb
 C:\Users\HP\Source\Repos\formalDefault\UIFarmacia\login\obj\Debug\net6.0-windows\login.genruntimeconfig.cache
 C:\Users\HP\Source\Repos\formalDefault\UIFarmacia\login\obj\Debug\net6.0-windows\login.csproj.AssemblyReference.cache
-C:\Users\HP\Source\Repos\formalDefault\UIFarmacia\login\obj\Debug\net6.0-windows\login.Vista.Secciones.SubSecciones.Clientes.detalleClientes.resources
+C:\Users\HP\Source\Repos\formalDefault\UIFarmacia\login\obj\Debug\net6.0-windows\login.Vista.Secciones.SubSecciones.Inventario.DetalleProducto.resources

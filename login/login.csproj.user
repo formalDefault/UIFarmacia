@@ -40,6 +40,9 @@
     <Compile Update="Vista\Secciones\SubSecciones\Inventario\AgregarEntrada.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Vista\Secciones\SubSecciones\Inventario\DetalleProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Vista\Secciones\SubSecciones\Inventario\Detalles.cs">
       <SubType>Form</SubType>
     </Compile>

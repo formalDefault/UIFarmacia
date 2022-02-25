@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Clientes));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.cancelar_btn = new System.Windows.Forms.Button();
+            this.btnDetalles = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -58,14 +58,14 @@
             this.dataGridView1.CausesValidation = false;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Transparent;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Transparent;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dataGridView1.Location = new System.Drawing.Point(38, 32);
@@ -73,31 +73,32 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(0, 2, 2, 0);
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(36)))), ((int)(((byte)(67)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(0, 2, 2, 0);
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(36)))), ((int)(((byte)(67)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView1.RowTemplate.Height = 45;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(884, 519);
             this.dataGridView1.TabIndex = 41;
             // 
-            // cancelar_btn
+            // btnDetalles
             // 
-            this.cancelar_btn.BackColor = System.Drawing.Color.Green;
-            this.cancelar_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cancelar_btn.FlatAppearance.BorderSize = 0;
-            this.cancelar_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cancelar_btn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.cancelar_btn.ForeColor = System.Drawing.Color.White;
-            this.cancelar_btn.Location = new System.Drawing.Point(996, 615);
-            this.cancelar_btn.Name = "cancelar_btn";
-            this.cancelar_btn.Size = new System.Drawing.Size(170, 33);
-            this.cancelar_btn.TabIndex = 6;
-            this.cancelar_btn.Text = "Ver detalles";
-            this.cancelar_btn.UseCompatibleTextRendering = true;
-            this.cancelar_btn.UseVisualStyleBackColor = false;
+            this.btnDetalles.BackColor = System.Drawing.Color.Green;
+            this.btnDetalles.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDetalles.FlatAppearance.BorderSize = 0;
+            this.btnDetalles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDetalles.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnDetalles.ForeColor = System.Drawing.Color.White;
+            this.btnDetalles.Location = new System.Drawing.Point(996, 615);
+            this.btnDetalles.Name = "btnDetalles";
+            this.btnDetalles.Size = new System.Drawing.Size(170, 33);
+            this.btnDetalles.TabIndex = 6;
+            this.btnDetalles.Text = "Ver detalles";
+            this.btnDetalles.UseCompatibleTextRendering = true;
+            this.btnDetalles.UseVisualStyleBackColor = false;
+            this.btnDetalles.Click += new System.EventHandler(this.cancelar_btn_Click);
             // 
             // Clientes
             // 
@@ -105,7 +106,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1423, 657);
-            this.Controls.Add(this.cancelar_btn);
+            this.Controls.Add(this.btnDetalles);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Clientes";
@@ -120,6 +121,6 @@
 
         private Panel panel1;
         private DataGridView dataGridView1;
-        private Button cancelar_btn;
+        private Button btnDetalles;
     }
 }

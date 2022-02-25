@@ -187,8 +187,7 @@ namespace login.Vista.Secciones.SubSecciones.Caja
 
         //cancelar compra
         private void cancelar_btn_Click(object sender, EventArgs e)
-        {
-            //if (MessageBox.Show("Esta seguro de cancelar la compra?", "Cancelar compra", MessageBoxButtons.YesNo) == DialogResult.Yes)
+        { 
             if(MessageBox.Show("¿Esta seguro de cancelar la venta?", "Cancelar venta actual", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
                 limpiar();
