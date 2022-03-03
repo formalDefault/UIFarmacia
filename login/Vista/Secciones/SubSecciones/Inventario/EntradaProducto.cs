@@ -1,17 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace login.Vista.Secciones.SubSecciones.Inventario
+﻿namespace login.Vista.Secciones.SubSecciones.Inventario
 {
     public partial class EntradaProducto : Form
-    { 
+    {
         Model.funcGenerales funciones = new Model.funcGenerales();
         Model.inventario.varInventario varInventario = new Model.inventario.varInventario();
         Model.inventario.inventario inventario = new Model.inventario.inventario();
@@ -22,7 +12,7 @@ namespace login.Vista.Secciones.SubSecciones.Inventario
         {
             InitializeComponent();
             funciones.comboBox(txtProductos, "SELECT nombre FROM productos", "nombre");
-            panelAddProduct.Visible = false; 
+            panelAddProduct.Visible = false;
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -44,13 +34,13 @@ namespace login.Vista.Secciones.SubSecciones.Inventario
                     funciones.DeleteElement("compras", Variables.IdCompra);
                     this.Hide();
                 }
-                    
+
             }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if(txtProductos.Text != "" && txtCantidad.Text != "" )
+            if (txtProductos.Text != "" && txtCantidad.Text != "")
             {
                 int idProducto = funciones.GetId("productos", "nombre = '" + txtProductos.Text + "'");
                 int cantidadProducto = Int16.Parse(txtCantidad.Text);
@@ -71,29 +61,29 @@ namespace login.Vista.Secciones.SubSecciones.Inventario
                     else
                     {
                         inventario.enlazarEntradasCompras(varInventario.peekStackEntradas(), varInventario.IdCompra);
-                        MessageBox.Show("Se finalizó la compra"); 
+                        MessageBox.Show("Se finalizó la compra");
                         stock.loadTable();
                         this.Hide();
                     }
-                } 
+                }
             }
             else
             {
                 MessageBox.Show("Falta registrar uno de los datos de entrada");
-            } 
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int idProducto = funciones.GetId("productos", "nombre = '"+ txtProductos.Text + "'");
+            int idProducto = funciones.GetId("productos", "nombre = '" + txtProductos.Text + "'");
             int cantidadProducto = Int16.Parse(txtCantidad.Text);
-            if (inventario.RegEntrada(idProducto , cantidadProducto, inventario.precioProductos(idProducto, cantidadProducto)))
+            if (inventario.RegEntrada(idProducto, cantidadProducto, inventario.precioProductos(idProducto, cantidadProducto)))
             {
                 MessageBox.Show("Entrada registrada");
                 varInventario.pushStackEntradas(funciones.GetId("entradas"));
             }
             stock.loadTable();
-            txtCantidad.Text = ""; 
+            txtCantidad.Text = "";
             txtProductos.Text = "";
         }
 
@@ -109,8 +99,8 @@ namespace login.Vista.Secciones.SubSecciones.Inventario
 
         private void txtCantidad_TextChanged(object sender, EventArgs e)
         {
-            if(txtProductos.Text != "" && txtCantidad.Text != "")
-            { 
+            if (txtProductos.Text != "" && txtCantidad.Text != "")
+            {
                 panelAddProduct.Visible = true;
             }
             if (txtCantidad.Text == "")

@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DetalleProducto));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.txtCosto = new System.Windows.Forms.TextBox();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -55,6 +58,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            this.panel8.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -65,6 +69,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.panel8);
             this.panel1.Controls.Add(this.btnCancel);
             this.panel1.Controls.Add(this.btnSave);
             this.panel1.Controls.Add(this.btnDelete);
@@ -86,8 +92,38 @@
             this.panel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.panel1.Location = new System.Drawing.Point(1, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(444, 554);
+            this.panel1.Size = new System.Drawing.Size(444, 624);
             this.panel1.TabIndex = 0;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label9.Location = new System.Drawing.Point(20, 342);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(107, 15);
+            this.label9.TabIndex = 36;
+            this.label9.Text = "Costo de compra:";
+            // 
+            // panel8
+            // 
+            this.panel8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel8.BackgroundImage")));
+            this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel8.Controls.Add(this.txtCosto);
+            this.panel8.Location = new System.Drawing.Point(14, 360);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(415, 53);
+            this.panel8.TabIndex = 35;
+            // 
+            // txtCosto
+            // 
+            this.txtCosto.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCosto.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtCosto.Location = new System.Drawing.Point(15, 18);
+            this.txtCosto.Name = "txtCosto";
+            this.txtCosto.Size = new System.Drawing.Size(385, 19);
+            this.txtCosto.TabIndex = 2;
+            this.txtCosto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCosto_KeyPress);
             // 
             // btnCancel
             // 
@@ -97,7 +133,7 @@
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnCancel.ForeColor = System.Drawing.Color.White;
-            this.btnCancel.Location = new System.Drawing.Point(159, 493);
+            this.btnCancel.Location = new System.Drawing.Point(153, 564);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(129, 30);
             this.btnCancel.TabIndex = 44;
@@ -114,11 +150,12 @@
             this.btnSave.Font = new System.Drawing.Font("Segoe UI Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
-            this.btnSave.Location = new System.Drawing.Point(369, 489);
+            this.btnSave.Location = new System.Drawing.Point(363, 560);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(45, 40);
             this.btnSave.TabIndex = 43;
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnDelete
             // 
@@ -129,11 +166,12 @@
             this.btnDelete.Font = new System.Drawing.Font("Segoe UI Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnDelete.ForeColor = System.Drawing.Color.White;
             this.btnDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.Image")));
-            this.btnDelete.Location = new System.Drawing.Point(20, 489);
+            this.btnDelete.Location = new System.Drawing.Point(14, 560);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(45, 40);
             this.btnDelete.TabIndex = 42;
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnEdit
             // 
@@ -144,7 +182,7 @@
             this.btnEdit.Font = new System.Drawing.Font("Segoe UI Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnEdit.ForeColor = System.Drawing.Color.White;
             this.btnEdit.Image = ((System.Drawing.Image)(resources.GetObject("btnEdit.Image")));
-            this.btnEdit.Location = new System.Drawing.Point(202, 489);
+            this.btnEdit.Location = new System.Drawing.Point(196, 560);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(45, 40);
             this.btnEdit.TabIndex = 41;
@@ -155,7 +193,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(291, 395);
+            this.label5.Location = new System.Drawing.Point(299, 463);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(62, 15);
             this.label5.TabIndex = 40;
@@ -165,7 +203,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(60, 395);
+            this.label4.Location = new System.Drawing.Point(68, 463);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(59, 15);
             this.label4.TabIndex = 39;
@@ -176,7 +214,7 @@
             this.panel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel7.BackgroundImage")));
             this.panel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panel7.Controls.Add(this.txtMenudeo);
-            this.panel7.Location = new System.Drawing.Point(220, 413);
+            this.panel7.Location = new System.Drawing.Point(228, 481);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(212, 53);
             this.panel7.TabIndex = 7;
@@ -189,13 +227,14 @@
             this.txtMenudeo.Name = "txtMenudeo";
             this.txtMenudeo.Size = new System.Drawing.Size(121, 19);
             this.txtMenudeo.TabIndex = 2;
+            this.txtMenudeo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMenudeo_KeyPress);
             // 
             // panel6
             // 
             this.panel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel6.BackgroundImage")));
             this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panel6.Controls.Add(this.txtMayoreo);
-            this.panel6.Location = new System.Drawing.Point(8, 413);
+            this.panel6.Location = new System.Drawing.Point(16, 481);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(196, 53);
             this.panel6.TabIndex = 6;
@@ -208,11 +247,12 @@
             this.txtMayoreo.Name = "txtMayoreo";
             this.txtMayoreo.Size = new System.Drawing.Size(121, 19);
             this.txtMayoreo.TabIndex = 2;
+            this.txtMayoreo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMayoreo_KeyPress);
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Black;
-            this.panel5.Location = new System.Drawing.Point(168, 376);
+            this.panel5.Location = new System.Drawing.Point(167, 453);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(105, 2);
             this.panel5.TabIndex = 38;
@@ -222,7 +262,7 @@
             this.label3.AutoSize = true;
             this.label3.Cursor = System.Windows.Forms.Cursors.Default;
             this.label3.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(181, 351);
+            this.label3.Location = new System.Drawing.Point(180, 428);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(81, 22);
             this.label3.TabIndex = 37;
@@ -315,6 +355,7 @@
             this.txtCod.Name = "txtCod";
             this.txtCod.Size = new System.Drawing.Size(353, 19);
             this.txtCod.TabIndex = 1;
+            this.txtCod.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCod_KeyPress);
             // 
             // textBox1
             // 
@@ -354,7 +395,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(446, 556);
+            this.ClientSize = new System.Drawing.Size(446, 627);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DetalleProducto";
@@ -362,6 +403,8 @@
             this.Text = "DetalleProducto";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panel6.ResumeLayout(false);
@@ -403,5 +446,8 @@
         private Button btnDelete;
         private Button btnEdit;
         private Button btnCancel;
+        private Label label9;
+        private Panel panel8;
+        private TextBox txtCosto;
     }
 }

@@ -195,7 +195,7 @@ namespace login.Model.inventario
             }
         }
          
-
+        //funcion que devuelve una lista con los detalles del producto
         public List<string> detalles(int id)
         {
 
@@ -203,7 +203,7 @@ namespace login.Model.inventario
             try
             {
                 con.Open(); 
-                MySqlCommand query = new MySqlCommand("SELECT codigo, nombre, categoria, retail, mayoreo FROM productos WHERE id = @id", con);
+                MySqlCommand query = new MySqlCommand("SELECT codigo, nombre, categoria, retail, mayoreo, costo FROM productos WHERE id = @id", con);
                 query.Parameters.AddWithValue("@id", id); 
                 MySqlDataReader reader = query.ExecuteReader(); 
 
@@ -215,6 +215,7 @@ namespace login.Model.inventario
                     lista.Add(String.Format("{0}", reader[2])); 
                     lista.Add(String.Format("{0}", reader[3])); 
                     lista.Add(String.Format("{0}", reader[4])); 
+                    lista.Add(String.Format("{0}", reader[5])); 
                 }
                 else
                 {
@@ -229,6 +230,34 @@ namespace login.Model.inventario
                 return lista;
             }
         }
+
+        //registra la entrada de un producto
+        public Boolean updateProduct(int idProd, int codigo, string name, string categoria, float retail, float mayoreo, float costo)
+        {
+            query = "UPDATE productos SET nombre = @nombre, codigo = @codigo, costo = @costo, categoria = @categoria, retail = @retail, mayoreo = @mayoreo WHERE id = @idProd";  
+            try
+            {
+                con.Open();
+                command = new MySqlCommand(query, con);
+                command.Parameters.AddWithValue("@idprod", idProd);
+                command.Parameters.AddWithValue("@nombre", name);
+                command.Parameters.AddWithValue("@codigo", codigo);
+                command.Parameters.AddWithValue("@costo", costo);
+                command.Parameters.AddWithValue("@categoria", categoria);
+                command.Parameters.AddWithValue("@retail", retail);
+                command.Parameters.AddWithValue("@mayoreo", mayoreo);
+                command.ExecuteNonQuery(); 
+                con.Close();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error en la base de datos: " + ex.Message + " ");
+                con.Close(); 
+                return false;
+            }
+        }
+
 
     }
 }

@@ -88,8 +88,6 @@ namespace login.Model.caja
             {
                 MessageBox.Show("Error: La pila esta vacia");
             }
-        }
-         
-         
+        } 
     }
 }
